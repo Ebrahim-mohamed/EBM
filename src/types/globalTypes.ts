@@ -1,19 +1,22 @@
+import { ReactNode } from "react";
+
 export type heroType = {
-  header: string;
+  header: ReactNode;
   location: string;
   pra?: string;
-  button?: string;
+  button1?: string;
+  to1?: string;
+  button2?: string;
+  to2?: string;
   isCenter?: boolean;
 };
 export type headerType = {
-  header: string;
+  header: ReactNode;
   pra?: string;
-  pageName: string;
-  sectionName: string;
-  isNotCenter: boolean;
+  isNotCenter?: boolean;
 };
 export type endSectionType = {
-  header: string;
+  header: ReactNode;
   button: string;
   to: string;
   pageName: string;

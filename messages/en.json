@@ -14,6 +14,31 @@
       "des": "EMB is a leader in Fire protection, HVAC, and Electromechanical system, over 15 years of experience in supply, installation, and maintenance,",
       "button1": "Explore Solution",
       "button2": "Contact Us"
+    },
+    "storySection": {
+      "header": "Our <second>Story</second> and <second>Commitment</second>",
+      "des": "About EBM",
+      "secondHeader": "Founded with a vision to deliver exceptional engineering solutions, EBM has grown into a trusted partner for complex projects across the region. We are built on a foundation of integrity, innovation, and an unwavering commitment to quality.",
+      "pra1": "Our Mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
+      "pra2": "Our Mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
+      "pra3": "Our Mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
+      "button": "About Us"
+    },
+    "servicesAndSolutions": {
+      "header": "<second>Solution</second> & <second>Services</second>",
+      "des": "Serving Clients with sincerity and commitment, more that a decade",
+      "button": "See more"
+    },
+    "partnersSection": {
+      "header": "<second>We are proud to be</second> trusted by",
+      "button": "View All"
+    },
+    "projectsSection": {
+      "header": "Delivering Impact <second>Through Every Project.</second>"
+    },
+    "endSection": {
+      "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
+      "button": "Get in touch"
     }
   }
 }

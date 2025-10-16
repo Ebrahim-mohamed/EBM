@@ -8,8 +8,6 @@ export function NavbarTab({ name }: { name: string }) {
   const t = useTranslations("navbar");
   const locale = useLocale();
   const path = usePathname();
-  console.log(path);
-  console.log(name);
   const isIn =
     name !== "home" ? path.match(locale) : path.match(`/${locale}/${name}`);
   if (name === "contact") {
