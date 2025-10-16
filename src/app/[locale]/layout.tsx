@@ -1,8 +1,7 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-// import { Header } from "../components/Header";
-// import { Footer } from "../components/Footer";
+import { WebsiteHeader } from "@/components/WebsiteHeader";
 export default async function LocaleLayout({
   children,
   params,
@@ -17,9 +16,9 @@ export default async function LocaleLayout({
   }
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <body className="relative overflow-x-hidden">
+      <body className="relative overflow-x-hidden bg-[var(--mainBackGroundColor)]">
         <NextIntlClientProvider>
-          {/* <Header /> */}
+          <WebsiteHeader />
           {children}
           {/* <Footer /> */}
         </NextIntlClientProvider>

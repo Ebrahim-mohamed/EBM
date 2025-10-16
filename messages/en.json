@@ -1,5 +1,19 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "projects": "Projects",
+    "service-solution": "Solutions & Services",
+    "clients-partners": "Clients & Partners",
+    "news-insights": "News & Insights",
+    "contact": "Contact Us"
+  },
+  "homePage": {
+    "heroSection": {
+      "header": "Empowering Sustainable & <second>Safe Environment</second>",
+      "des": "EMB is a leader in Fire protection, HVAC, and Electromechanical system, over 15 years of experience in supply, installation, and maintenance,",
+      "button1": "Explore Solution",
+      "button2": "Contact Us"
+    }
   }
 }
