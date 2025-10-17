@@ -54,7 +54,8 @@
       "des": "Welcome to EBM Saudi Arabia",
       "pra1": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice.",
       "pra2": "From the inception, EBM Saudi Arabia has seized opportunities through unprecedented technical expertise, reliability and competitiveness to deliver cost-effective and substantial assistance in the supply, installation, testing & commissioning and preventive maintenance for HVAC systems, Electromechanical and Fire & Safety Protection for commercial and industrial projects. During our journey, we have never compromised on the professionalism, and quality of the services that we offer, this rewarded us the strength to overwhelm the competition and attain greater glory in the ever-changing global business landscape",
-      "person": "Mazen Sheet <br>Chairman</br>",
+      "person": "-Mazen Sheet",
+      "jop": "Chairman",
       "signature": "Mazen Sheet"
     },
     "whoSection": {
@@ -65,10 +66,10 @@
     "visionAndMissionSection": {
       "visionHeader": "Vision",
       "missionHeader": "Mission",
-      "ValueHeader": "Core Values",
+      "valueHeader": "Core Values",
       "visionDes": "To be the global leader in building project execution, setting the industry benchmark for streamlined, reliable, and high-quality installations worldwide.",
       "missionDes": "Delivering comprehensive, end-to-end solutions for the global building industry, we ensure superior efficiency, professional installation, and timely completion everywhere.",
-      "ValueDes": "We guarantee a seamless, professional, and reliable outcome by owning every stage of the project, from initial concept to final maintenance."
+      "valueDes": "We guarantee a seamless, professional, and reliable outcome by owning every stage of the project, from initial concept to final maintenance."
     },
     "sustainabilitySection": {
       "header": "<second>Sustainability</second> at EBM",

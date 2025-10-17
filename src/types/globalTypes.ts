@@ -14,6 +14,7 @@ export type headerType = {
   header: ReactNode;
   pra?: string;
   isNotCenter?: boolean;
+  isBr?: boolean;
 };
 export type endSectionType = {
   header: ReactNode;
