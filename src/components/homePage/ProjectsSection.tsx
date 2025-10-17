@@ -5,8 +5,8 @@ export function ProjectsSection() {
   const t = useTranslations("homePage.projectsSection");
   return (
     <div className="p-[var(--sectionPadding)] bg-[url('/homePage/projectDemo.png')] bg-no-repeat bg-cover">
-      <div className="flex items-center">
-        <div className="max-w-[30rem] text-center">
+      <div className="flex justify-center">
+        <div className="max-w-[55rem] text-center">
           <Header
             header={t.rich("header", {
               second: (chunk) => (

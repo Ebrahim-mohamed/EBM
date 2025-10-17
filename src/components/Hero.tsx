@@ -13,7 +13,11 @@ export function Hero(heroProps: heroType) {
         backgroundImage: `url(/${heroProps.location}/heroSectionBg.png)`,
       }}
     >
-      <h1 className="text-[6rem] text-white font-black leading-[120%]">
+      <h1
+        className={`text-[6rem] text-white font-black leading-[120%] ${
+          heroProps.isCenter && " text-center "
+        } `}
+      >
         {heroProps.header}
       </h1>
       {heroProps.pra && (

@@ -40,5 +40,80 @@
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
       "button": "Get in touch"
     }
+  },
+  "aboutPage": {
+    "heroSection": {
+      "header": "Building futures, <second>one efficient installation at a time.</second>"
+    },
+    "storySection": {
+      "header": "Our <second>Story</second>",
+      "des": "<second>EBM’s Interior Architectural Division</second> is led by a team of specialists with more than <second>twenty years of experience</second> in architectural systems across the Middle East and beyond. We deliver systems that <second>protect buildings</second>, enhance interiors, and contribute to long-term performance. From healthcare corridors to transport hubs, we combine international product quality with regional expertise, giving consultants, contractors, and clients solutions they can <second>trust</second>, <second>rely on</second>, and <second>count on for lasting value.</second>"
+    },
+    "messageSection": {
+      "header": "GM’s <second>Message</second>",
+      "des": "Welcome to EBM Saudi Arabia",
+      "pra1": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice.",
+      "pra2": "From the inception, EBM Saudi Arabia has seized opportunities through unprecedented technical expertise, reliability and competitiveness to deliver cost-effective and substantial assistance in the supply, installation, testing & commissioning and preventive maintenance for HVAC systems, Electromechanical and Fire & Safety Protection for commercial and industrial projects. During our journey, we have never compromised on the professionalism, and quality of the services that we offer, this rewarded us the strength to overwhelm the competition and attain greater glory in the ever-changing global business landscape",
+      "person": "Mazen Sheet <br>Chairman</br>",
+      "signature": "Mazen Sheet"
+    },
+    "whoSection": {
+      "header": "<second>Who</second> We Are",
+      "des": "EBM: Project done. Perfectly.",
+      "pra": "Energy & Building Masters (EBM) is a leading Middle East-based company specializing in comprehensive HVAC, Electromechanical, and Fire & Safety Protection services for commercial and industrial projects. EBM Saudi Arabia's core offering includes the full project lifecycle: supply, installation, testing & commissioning, and preventive maintenance. Since its inception, EBM has maintained a strong, long-term reputation by providing cost-effective and practical solutions that uphold high quality standards. This is achieved through an integrated model driven by a multidimensional team of professionals with over 15 years of industry excellence, allowing EBM to efficiently undertake projects of any scale—from conception to handover and subsequent upgrades—while maintaining dedication, integrity, and a commitment to being environmentally and socially responsible."
+    },
+    "visionAndMissionSection": {
+      "visionHeader": "Vision",
+      "missionHeader": "Mission",
+      "ValueHeader": "Core Values",
+      "visionDes": "To be the global leader in building project execution, setting the industry benchmark for streamlined, reliable, and high-quality installations worldwide.",
+      "missionDes": "Delivering comprehensive, end-to-end solutions for the global building industry, we ensure superior efficiency, professional installation, and timely completion everywhere.",
+      "ValueDes": "We guarantee a seamless, professional, and reliable outcome by owning every stage of the project, from initial concept to final maintenance."
+    },
+    "sustainabilitySection": {
+      "header": "<second>Sustainability</second> at EBM",
+      "des": "Because we have one planet",
+      "responsibleHeader": "Responsible Enterprise",
+      "workplaceHeader": "Sustainable workplace",
+      "productsHeader": "Sustainable products",
+      "operationsHeader": "Sustainable operations",
+      "responsibleDes1": "Ensuring an ethical and responsible business",
+      "responsibleDes2": "Zero tolerance for corruption",
+      "responsibleDes3": "Taking responsibility in our supply chain",
+      "workplaceDes1": "Sustainable workplace",
+      "workplaceDes2": "Promote employee",
+      "workplaceDes3": "Development",
+      "workplaceDes4": "Equal opportunities with an inclusive culture",
+      "productsDes1": "Develop leading energy efficient solutions",
+      "productsDes2": "Improving indoor air quality",
+      "productsDes3": "Life cycle approach to reduce environmental impact",
+      "operationsDes1": "Reduce emissions of green house gases",
+      "operationsDes2": "Improve the energy efficiency of facilities",
+      "operationsDes3": "Minimise the company’s environmental impact"
+    },
+    "visionSection": {
+      "header": "<second>2030</second> Vision",
+      "des": "Lorem ipsum dolor sit amet consectetur. Fermentum diam in sit",
+      "imagePra": "“Through our commitment to quality, compliance, and innovation, EBM is not only meeting the current demands of Vision 2030 but also preparing for its future.",
+      "pra1": "Lorem ipsum dolor sit amet consectetur. Vulputate.",
+      "pra2": "Lorem ipsum dolor sit amet consectetur. Vulputate.",
+      "pra3": "Lorem ipsum dolor sit amet consectetur. Vulputate.",
+      "pra4": "Lorem ipsum dolor sit amet consectetur. Vulputate."
+    },
+    "offersSection": {
+      "header": "<second>What</second> EBM <second>Offers</second>",
+      "des": "<second>Supply of World class Products & Solutions</second>",
+      "secondHeader": "Our offerings include:",
+      "pra1": "Fire Protection & Fire Fighting",
+      "pra2": "HVAC Equipments",
+      "pra3": "Waste Heat Recovery Systems & Boilers",
+      "pra4": "Industrial Parts & Equipment",
+      "pra5": "Renewable Energy",
+      "button": "View All Services"
+    },
+    "endSection": {
+      "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
+      "button": "Get in touch"
+    }
   }
 }
