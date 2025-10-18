@@ -8,6 +8,20 @@
     "news-insights": "News & Insights",
     "contact": "Contact Us"
   },
+  "footer": {
+    "navbar": {
+      "home": "Home",
+      "about": "About Us",
+      "projects": "Projects",
+      "service-solution": "Solutions & Services",
+      "clients-partners": "Clients & Partners",
+      "news-insights": "News & Insights",
+      "contact": "Contact Us"
+    },
+    "mainPra": "Sustaining Performance, Simplifying Maintenance.",
+    "forChat": "Let’s chat!",
+    "email": "haddawy@comcast.net"
+  },
   "homePage": {
     "heroSection": {
       "header": "Empowering Sustainable & <second>Safe Environment</second>",
@@ -103,8 +117,9 @@
     },
     "offersSection": {
       "header": "<second>What</second> EBM <second>Offers</second>",
-      "des": "<second>Supply of World class Products & Solutions</second>",
-      "secondHeader": "Our offerings include:",
+      "secondHeader": "Supply of World class Products & Solutions",
+      "des": "At EBM, we hold an unwavering commitment to delivering superior quality products and solutions across a wide array of categories.",
+      "thirdHeader": "Our offerings include:",
       "pra1": "Fire Protection & Fire Fighting",
       "pra2": "HVAC Equipments",
       "pra3": "Waste Heat Recovery Systems & Boilers",

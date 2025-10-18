@@ -4,7 +4,7 @@ export function Header(headerProps: headerType) {
     <div
       className={`flex flex-col ${
         headerProps.isNotCenter ? "  " : " items-center "
-      } justify-center gap-[0.5rem] mb-[3rem] w-full`}
+      } justify-center gap-[0.5rem] mb-[5rem] w-full`}
     >
       <h1 className="text-white text-[4rem] font-black">
         {headerProps.header}
