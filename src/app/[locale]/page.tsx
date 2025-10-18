@@ -1,7 +1,7 @@
 import { EndSection } from "@/components/endSection";
 import { Hero } from "@/components/Hero";
 import { PartnersSection } from "@/components/homePage/PartnersSection";
-import { ProjectsSection } from "@/components/homePage/projectsSection";
+
 import { ServiceAndSolutionSection } from "@/components/homePage/ServiceAndSolutionSection";
 import { StorySection } from "@/components/homePage/StorySection";
 import { useTranslations } from "next-intl";
@@ -25,7 +25,7 @@ export default function HomePage() {
       <StorySection />
       <ServiceAndSolutionSection />
       <PartnersSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       <EndSection
         button={endT("button")}
         header={endT.rich("header", {
