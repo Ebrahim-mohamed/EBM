@@ -131,5 +131,29 @@
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
       "button": "Get in touch"
     }
+  },
+  "ServiceAndSolutionsPage": {
+    "heroSection": {
+      "header": "Delivering <second>World-Class Solutions</second> and <second>Services You Can Trust</second>."
+    },
+    "servicesAndSolutionsSection": {
+      "header": "Our <second>Solutions</second> and <second>Services</second>",
+      "serviceHeader1": "Fire Protection & Fire Fighting",
+      "serviceDes1": "EBM Engineering deals with a wide range of fire & smoke curtains and fire protection products to protect every type of building application. | From protecting means of escape and boundary protection to provide a building with a system that offers effective fire and smoke compartmentation. | We offer various solutions to architects, engineers, consultants and designers providing the ability to design complex buildings that adhere to fire regulations and offer protection against fire and smoke.",
+      "serviceButton1": "Explore",
+      "serviceHeader2": "HVAC Solution",
+      "serviceDes2": "Modern HVAC systems are designed to• Introduce fresh outdoor air into indoor spaces• Dilute and remove airborne pollutants and CO₂• Control humidity levels and prevent condensation• Support energy efficiency through heat recovery and smart controls• Comply with ASHRAE and local ventilation standards",
+      "serviceButton2": "Explore",
+      "serviceHeader3": "Air Population Control",
+      "serviceDes3": "As part of our commitment to environmental stewardship and sustainable development, EBM Engineering proudly introduces Air Pollution Control as a core function within our operations in the Kingdom of Saudi Arabia. This division is dedicated to providing advanced solutions that reduce industrial emissions, improve air quality, and ensure compliance with local and international environmental standards. Leveraging cutting- edge technology and industry expertise, our systems are designed to capture and control airborne pollutants efficiently supporting cleaner production processes and healthier communities.",
+      "serviceButton3": "Explore",
+      "serviceHeader4": "Special Systems",
+      "serviceDes4": "Discover EBM’s range of specialized engineering products, including high-efficiency misting systems, industrial boilers, diesel gensets, and sustainable energy solutions — all designed to enhance performance, safety, and comfort across every project.",
+      "serviceButton4": "Explore"
+    },
+    "endSection": {
+      "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
+      "button": "Get in touch"
+    }
   }
 }
