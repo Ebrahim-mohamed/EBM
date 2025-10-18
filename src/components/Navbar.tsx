@@ -7,7 +7,7 @@ const navbarTabs = [
   "projects",
   "service-solution",
   "clients-partners",
-  "news-insights",
+  "interior-architectural",
   "contact",
 ];
 export function Navbar() {

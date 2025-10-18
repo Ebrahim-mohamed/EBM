@@ -9,7 +9,7 @@ const navs = [
   "projects",
   "service-solution",
   "clients-partners",
-  "news-insights",
+  "interior-architectural",
 ];
 export function Footer() {
   const t = useTranslations("footer");
