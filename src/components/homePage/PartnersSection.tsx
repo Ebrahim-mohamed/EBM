@@ -3,7 +3,11 @@ import { Header } from "../Header";
 import { PartnersBox } from "./PartnersBox";
 import { LinkButton } from "../LinkButton";
 
-export function PartnersSection() {
+export function PartnersSection({
+  isNotHomePage,
+}: {
+  isNotHomePage?: boolean;
+}) {
   const t = useTranslations("homePage.partnersSection");
   return (
     <div className="p-[var(--sectionPadding)] flex flex-col items-center justify-center">
@@ -17,7 +21,9 @@ export function PartnersSection() {
           <PartnersBox key={num.toString()} img={num.toString()} />
         ))}
       </div>
-      <LinkButton name={t("button")} to="clients-partners" />
+      {!isNotHomePage && (
+        <LinkButton name={t("button")} to="clients-partners" />
+      )}
     </div>
   );
 }

@@ -179,6 +179,30 @@
     "heroSection": {
       "header": "Empowering <second>Clients</second>, Strengthening <second>Partnerships</second>"
     },
+    "awardSection": {
+      "header": "Award-Winning Impact",
+      "des": "Passive <second>Protection</second> System",
+      "content": " This project was honored with the ASFP Best Installation Project of the Year for a second year in a row, recognizing Coopers Fire’s excellence in passive fire protection. Beyond accolades, the real reward lies in safeguarding millions of pilgrims and preserving the sanctity of this sacred site"
+    },
+    "mangersSection": {
+      "header": "<second>The Minds Behind</second> EBM",
+      "mangerName": "The name",
+      "jopTitle": "His job Title"
+    },
+    "faqSection": {
+      "header": "Frequently Asked <second>Questions</second>",
+      "des": "We've answered some of our most common questions to provide you with the information you need.",
+      "que1": "Who are EBM’s typical clients?",
+      "ans1": "Who are EBM’s typical clients?",
+      "que2": "How does EBM choose its partners?",
+      "ans2": "How does EBM choose its partners?",
+      "que3": "Can small businesses partner with EBM?",
+      "ans3": "Can small businesses partner with EBM?",
+      "que4": "What industries does EBM support?",
+      "ans4": "What industries does EBM support?",
+      "que5": "How can I become a partner with EBM?",
+      "ans5": "How can I become a partner with EBM?"
+    },
     "endSection": {
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
       "button": "Get in touch"
