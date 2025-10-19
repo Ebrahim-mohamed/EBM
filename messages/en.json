@@ -161,6 +161,9 @@
       "header": "Building Excellence, <second>One Project at a Time</second>",
       "des": "From concept to completion, our projects highlight the trust we’ve built and the results we’ve delivered."
     },
+    "projectsSection": {
+      "header": "our <second>projects</second>"
+    },
     "endSection": {
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
       "button": "Get in touch"

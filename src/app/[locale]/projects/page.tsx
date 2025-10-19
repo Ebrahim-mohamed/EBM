@@ -1,5 +1,6 @@
 import { EndSection } from "@/components/endSection";
 import { Hero } from "@/components/Hero";
+import { ProjectsSection } from "@/components/projectsPage/ProjectsSection";
 import { useTranslations } from "next-intl";
 
 export default function ProjectsPage() {
@@ -15,6 +16,7 @@ export default function ProjectsPage() {
         pra={heroT("des")}
         location="projectsPage"
       />
+      <ProjectsSection />
       <EndSection
         button={endT("button")}
         header={endT.rich("header", {
