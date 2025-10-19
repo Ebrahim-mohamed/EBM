@@ -8,8 +8,6 @@ export function NavbarTab({ name }: { name: string }) {
   const t = useTranslations("navbar");
   const locale = useLocale();
   const path = usePathname();
-  const isIn =
-    name !== "home" ? path.match(locale) : path.match(`/${locale}/${name}`);
   if (name === "contact") {
     return <LinkButton name={t(name)} to={name} />;
   }
@@ -17,7 +15,10 @@ export function NavbarTab({ name }: { name: string }) {
     <Link
       href={name === "home" ? `/${locale}` : `/${locale}/${name}`}
       className={`text-[1rem] ${
-        isIn ? " text-white " : " text-[#A8CF38] "
+        (path == `/${locale}` && name === "home") ||
+        (path !== `/${locale}` && name !== "home" && path.includes(name))
+          ? " text-[#A8CF38] "
+          : " text-white  "
       } font-[350] hover:animate-pulse`}
     >
       {t(name)}

@@ -186,7 +186,36 @@
   },
   "contactPage": {
     "heroSection": {
-      "header": "<second>Contact Us</second>"
+      "header": "Contact Us",
+      "des": "We’re here to help. Reach out to us with any question or inquiries you may have"
+    },
+    "formSection": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Write your name here",
+      "nameError": "Name should be 3 characters at least",
+      "nameEmptyError": "Please enter your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Write your email here",
+      "emailError": "Email should contain @",
+      "emailEmptyError": "Please enter your email",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "Write your phone number here",
+      "phoneError": "phone should be 10 characters at least",
+      "phoneEmptyError": "Please enter your phone",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help you",
+      "messageError": "message should be 50 characters at least",
+      "messageEmptyError": "Please enter your message",
+      "button": "Submit"
+    },
+    "contactInfo": {
+      "header": "Our Headquarters",
+      "emailHeader": "Email",
+      "phoneHeader": "Phone Number",
+      "addressHeader": "Saudi Arabia HQ",
+      "address": "3919 Makkah Al Mukarramah Rd. - Ar Rabwah Dist. Unit No 8535 - 12813 ,06, Riyadh - Saudi Arabia",
+      "phone": "+966 1 2920083 / +966 56 424 8924",
+      "email": "info@ebmksa.com"
     }
   }
 }
