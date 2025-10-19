@@ -4,10 +4,9 @@ import { LinkButton } from "./LinkButton";
 export function Hero(heroProps: heroType) {
   return (
     <div
-      className={` p-[var(--sectionPadding)] h-dvh w-dvw flex flex-col items-center bg-no-repeat bg-cover ${
-        heroProps.isCenter
-          ? " justify-center items-center "
-          : " justify-end items-start"
+      id="hero-section"
+      className={` p-[var(--sectionPadding)] h-dvh w-dvw flex flex-col items-center bg-no-repeat bg-cover justify-center ${
+        heroProps.isCenter ? " items-center " : " items-start"
       } gap-[1rem]`}
       style={{
         backgroundImage: `url(/${heroProps.location}/heroSectionBg.png)`,
@@ -29,7 +28,7 @@ export function Hero(heroProps: heroType) {
         <div className="flex items-center justify-center gap-[1.5rem]">
           <LinkButton name={heroProps.button1} to={heroProps.to1} />
           {heroProps.button2 && heroProps.to2 && (
-            <LinkButton name={heroProps.button2} to={heroProps.to2} />
+            <LinkButton name={heroProps.button2} to={heroProps.to2} isBlack />
           )}
         </div>
       )}

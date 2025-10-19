@@ -14,8 +14,8 @@ export function StorySection() {
         })}
         pra={t("des")}
       />
-      <div className="flex gap-[4rem]">
-        <div className="flex flex-col gap-[2rem]">
+      <div className="flex gap-[4rem] items-center">
+        <div className="flex flex-col gap-[2rem] justify-start ">
           <h2 className="text-[1rem] text-white font-[350] ">
             {t("secondHeader")}
           </h2>
@@ -24,8 +24,9 @@ export function StorySection() {
               <StoryPra text={t(pra)} key={pra} />
             ))}
           </div>
-
-          <LinkButton name={t("button")} to="about" />
+          <div>
+            <LinkButton name={t("button")} to="about" />
+          </div>
         </div>
         <Image
           alt="story image"
