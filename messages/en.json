@@ -281,6 +281,62 @@
       "button": "Get in touch"
     }
   },
+  "specialProjectsPage": {
+    "heroSection": {
+      "header": "Specialized Solutions for <second>Complex Needs</second>"
+    },
+    "mistingSystemsSection": {
+      "header": "Misting Systems",
+      "des": "BM Engineering provides high-efficiency misting systems for cooling, humidification, and dust suppression across industrial, commercial, and outdoor spaces.",
+      "secondHeader": "Features & Benefits:",
+      "point1": "High-pressure misting for rapid cooling without wet surfaces",
+      "point2": "Energy-efficient and environmentally friendly design",
+      "point3": "Durable stainless-steel components for long-term performance",
+      "point4": "Automatic control systems for temperature and humidity regulation",
+      "point5": "Easy installation and low maintenance",
+      "point6": "Suitable for factories, greenhouses, resorts, and public areas",
+      "concPra": "EBM’s misting solutions ensure comfort, safety, and reliability even in demanding environments."
+    },
+    "specialProductsSection": {
+      "header": "Special Products",
+      "project1": {
+        "header": "Electric Industrial Boilers",
+        "des": "High-performance electric and high-voltage boilers designed for steam, hot water, and thermal oil applications.",
+        "point1": "Power range up to 60,000 kW",
+        "point2": "Options for immersion, jet-type, and electrode systems",
+        "point3": "Includes auxiliary units like deaerators, feedwater pumps, and silencers",
+        "point4": "Ideal for industrial heating and process applications"
+      },
+      "project2": {
+        "header": "Thermal Oxidizer",
+        "des": "Reliable automatic and manual strainers for protecting pipelines and process equipment.",
+        "point1": "Self-cleaning scraper and backwash models available",
+        "point2": "Basket, Y, and temporary conical types",
+        "point3": "Built for continuous operation and minimal maintenance",
+        "point4": "Ensures clean, efficient fluid flow in demanding systems"
+      },
+      "project3": {
+        "header": "Diesel Gensets",
+        "des": "EBM partners with Ausonia to provide diesel generators up to 3000 kVA, ensuring uninterrupted power for critical sectors.",
+        "point1": "Engines from Cummins, Doosan, and MTU",
+        "point2": "Hybrid solar configurations for sustainable operation",
+        "point3": "Soundproof and extreme-environment options",
+        "point4": "Reliable for healthcare, telecom, and infrastructure applications"
+      },
+      "project4": {
+        "header": "Solar Panel Systems",
+        "des": "Powering tomorrow’s buildings with sustainable solar solutions.",
+        "point1": "Designed for high performance in harsh climates",
+        "point2": "Scalable and adaptable to various facility types",
+        "point3": "Reduces operational costs and supports green energy goals",
+        "point4": "Built for long-term reliability and ROI"
+      }
+    },
+    "endSection": {
+      "header": "<second>Ready to Elevate Your Building’s Performance?</second>",
+      "button": "Get in touch"
+    }
+  },
   "contactPage": {
     "heroSection": {
       "header": "Contact Us",
