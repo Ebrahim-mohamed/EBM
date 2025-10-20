@@ -238,6 +238,49 @@
       "button": "Get in touch"
     }
   },
+  "fireFightingPage": {
+    "heroSection": {
+      "header": "Protecting What <second>Matters Most</second>",
+      "des": "Comprehensive fire protection and firefighting solutions, engineered to safeguard lives and assets."
+    },
+    "secondSection": {
+      "header": "Achieve Unmatched Safety. Are You Ready for EBM?",
+      "des": "EBM Engineering: Your trusted specialist for comprehensive Fire Protection and Safety solutions. We provide top-tier products and full-service support to safeguard your building and its occupants.",
+      "button": "Explore our solutions"
+    },
+    "safetySection": {
+      "header": "Achieve Unmatched Safety. Are You Ready for EBM?",
+      "des": "EBM Engineering: Your trusted specialist for comprehensive Fire Protection and Safety solutions. We provide top-tier products and full-service support to safeguard your building and its occupants.",
+      "button": "Explore our solutions"
+    },
+    "smokeSection": {
+      "header1": "Fire & Smoke Curtains",
+      "pra1": "Smoke curtains are made from fiberglass and use a specific coating that is created to prevent  the curtain from emitting gas or additional smoke. Fire curtains also contain fiberglass filaments and a special coating like smoke curtains but require stainless steel thread that allows them more resistance to direct flames and higher temperatures. Applications: Hotels, hospitals, mall, schools, etc.",
+      "header2": "The Anatomy of Assurance",
+      "pra2": "Every logo represents a promise we keep: from our award-winning manufacturing to verified fire-test performance. This is how we ensure our fire shutters provide unquestionable safety and reliability for your assets.",
+      "imageText1": "FireMaster Plus2 Fire Curtain",
+      "imageText2": "Vii®Fire Al Fire Curtain"
+    },
+    "smokeFansSection": {
+      "header1": "Smoke Fans",
+      "pra1": "Smoke exhaust fans are engineered to efficiently extract large volumes of hot smoke during fire emergencies, enhancing visibility and enabling safe evacuation. These systems play a critical role in maintaining tenable conditions in escape routes and supporting firefighting efforts. Designed for high-performance under extreme temperatures, smoke exhaust fans are typically installed in accordance with NFPA 92A.",
+      "header2": "A Commitment to Quality and Safety",
+      "pra2": "Your safety is built on trusted quality. We exclusively use proven brands and certified equipment to ensure our solutions perform reliably when it matters most. This is our commitment to your peace of mind.",
+      "imageText1": "Axial Fans",
+      "imageText2": "Axalu"
+    },
+    "fireShutterSection": {
+      "header1": "Fire Shutter",
+      "pra1": "Available in 4-hour Fire-rated specification tested to UL10B,BS476. The Insulated Fire Shutter is a single-layer shutter curtain made of steel face sheets on both sides of the curtain and incorporated and sealed with fire rated heat insulation boards in between.",
+      "header2": "A Legacy of Certified and Award-Winning Quality",
+      "imageText1": "Insulated Sectional Sheet Doors",
+      "imageText2": "Roll up Sheet Doors"
+    },
+    "endSection": {
+      "header": "<second>Ready to Elevate Your Building’s Performance?</second>",
+      "button": "Get in touch"
+    }
+  },
   "contactPage": {
     "heroSection": {
       "header": "Contact Us",
