@@ -47,7 +47,8 @@ export function FireFightingComp(props: fireFightingPropsType) {
           <h2 className="text-[#A8CF38] text-[1.5rem] font-black leading-[3.125rem]">
             {t("header2")}
           </h2>
-          {t("pra2") && (
+          {(props.location === "smokeSection" ||
+            props.location === "smokeFansSection") && (
             <p className="text-[1.125rem] font-normal text-white leading-[1.8rem]">
               {t("pra2")}
             </p>
