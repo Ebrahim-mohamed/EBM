@@ -173,6 +173,33 @@
     "heroSection": {
       "header": "Interior Architectural Division — <second>Precision Built</second>, <second>Made to Last.</second>"
     },
+    "divisionSection": {
+      "header": "About Us",
+      "des": "EBM’s <second>Interior Architectural</second> Division",
+      "content1": "EBM’s Interior Architectural Division is led by a team of specialists with more than twenty years of experience in architectural systems across the Middle East and beyond. We deliver systems that protect buildings, enhance interiors, and contribute to long-term performance.",
+      "content2": "From healthcare corridors to transport hubs, we combine international product quality with regional expertise, giving consultants, contractors, and clients solutions they can trust, rely on, and count on for lasting value."
+    },
+    "coreSection": {
+      "header": "Our Core <second>Products</second>"
+    },
+    "sectorsSection": {
+      "header": "Sectors <second>We Serve</second>",
+      "sector1": "Healthcare",
+      "sector2": "Education",
+      "sector3": "Retail & Commercial",
+      "sector4": "Hospitality",
+      "sector5": "Transport Hubs"
+    },
+    "whySection": {
+      "header": "Why Choose <second>EBM</second>?",
+      "des": "Working with EBM means smoother delivery, less risk, and solutions that perform.",
+      "pra1": "✅ Proven systems trusted in landmark projects across the GCC",
+      "pra2": "✅ More than twenty years of architectural expertise",
+      "pra3": "✅ Customer-first approach with practical solutions that work in the field",
+      "pra4": "✅ Access to innovative global products",
+      "pra5": "✅ Complete support: design, supply, installation, service",
+      "pra6": "✅ Solutions tested for GCC standards, climate, and compliance"
+    },
     "endSection": {
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
       "button": "Get in touch"
