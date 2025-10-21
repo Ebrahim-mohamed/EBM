@@ -337,6 +337,49 @@
       "button": "Get in touch"
     }
   },
+  "airPopulationPage": {
+    "heroSection": {
+      "header": "Delivering <second>World-Class Solutions</second> and <second>Services You Can Trust</second>."
+    },
+    "PopulationControlSection": {
+      "header": "Air Population Control",
+      "des": "As part of our commitment to environmental stewardship and sustainable development, EBM Engineering proudly introduces Air Pollution Control as a core function within our operations in the Kingdom of Saudi Arabia. This division is dedicated to providing advanced solutions that reduce industrial emissions, improve air quality, and ensure compliance with local and international environmental standards. Leveraging cutting edge technology and industry expertise, our systems are designed to capture and control airborne pollutants efficiently supporting cleaner production processes and healthier communities.Through this function, we continue to align our services with the Vision 2030 goals for a greener, and more sustainable future."
+    },
+    "solutionsAndServicesSection": {
+      "header": "Our Solutions and Services",
+      "service1": {
+        "header": " Dust, Fume & Mist Collector",
+        "des": " Dirty air is pulled in from duct work and particulates are captured by the Delta MAXXTM filters. The clean air is pulled through the filter media and up into the clean air plenum. The air then exits the collector and goes to the return air duct. Compressed air pulses down into the filter cleaning it from the inside out. The dust cake built on the filter is then knocked down into the grating below or into a hopper.",
+        "secondHeader": "Applications",
+        "point1": "Factories",
+        "point2": "Minning",
+        "point3": "Construction sites"
+      },
+      "service2": {
+        "header": "Thermal Oxidizer",
+        "des": "Thermal Oxidizers are essential pollution control devices used to remove harmful Volatile Organic Compounds (VOCs) and hazardous air pollutants (HAPs) from industrial exhaust streams. These systems work by using high temperatures to combust the contaminants, converting them into harmless carbon dioxide and water vapor before release. ",
+        "secondHeader": "Applications",
+        "point1": "Factories",
+        "point2": "Food Manufacturing",
+        "point3": "Recovery",
+        "point4": "Recycling"
+      },
+      "service3": {
+        "header": "Sand Trap Louvers",
+        "des": " Louvers are designed for air intake and exhaust in HVAC systems, featuring a robust assembly with frames and specialized blades that include double grooves for fasteners. Made from extruded aluminum alloy, they enhance architectural style while functioning as intake and exhaust components, and are available in standard white or custom colors.",
+        "secondHeader": "Applications",
+        "point1": "High Efficiency Louvers",
+        "point2": "Exhaust Louvers",
+        "point3": "Sand Trap Louver",
+        "point4": "Fresh Air Louver",
+        "point5": "Acoustic Louver"
+      }
+    },
+    "endSection": {
+      "header": "<second>Ready to Elevate Your Building’s Performance?</second>",
+      "button": "Get in touch"
+    }
+  },
   "contactPage": {
     "heroSection": {
       "header": "Contact Us",
