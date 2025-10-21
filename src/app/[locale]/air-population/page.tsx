@@ -12,6 +12,8 @@ export default function AirPopulation() {
         header={heroT.rich("header", {
           second: (chunk) => <span className=" text-[#A8CF38]">{chunk}</span>,
         })}
+        button1={heroT("button")}
+        to1="service-solution"
         location="airPopulationPage"
       />
       <ServicesSection />
