@@ -381,6 +381,56 @@
       "button": "Get in touch"
     }
   },
+  "hvacPage": {
+    "heroSection": {
+      "header": "Efficient <second>HVAC Solutions</second>, Built for Comfort and <second>Reliability</second>.",
+      "button": "Explore Our Solutions and Services"
+    },
+    "hvacEquipments": {
+      "header": "HVAC EQUIPMENT"
+    },
+    "hvacSystemSection": {
+      "header": "HVAC System",
+      "des": " We at EBM Engineering take pride in offering a curated selection of HVAC products featuring  the industry’s best brands. Our commitment to excellence means you’ll find top-quality  heating, ventilation, electrochemical and air conditioning solutions for your every need. Your  journey to superior HVAC starts here"
+    },
+    "trustSection": {
+      "header": "<second>We are proud to be</second> trusted by"
+    },
+    "ventilationSection": {
+      "header": "Ventilation",
+      "des": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice.",
+      "text1": "Axial Fans",
+      "text2": "Centrifugal Fans",
+      "text3": "Duct Fans",
+      "text4": "Domestic Fans",
+      "text5": "Roof Fans",
+      "text6": "Ceiling Fans",
+      "text7": "Jet Fans"
+    },
+    "professionalKitchenSection": {
+      "header": "Professional Kitchen",
+      "des": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice."
+    },
+    "heatingAndDhwAndClimateControlSection": {
+      "header": "Heating/ DHW/ Climate Control ",
+      "des": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice."
+    },
+    "heatingSection": {
+      "header": "1-Heating",
+      "point1": "Electric Air Heaters",
+      "point2": "Teriary Warm Air Curtains"
+    },
+    "dhwSection": {
+      "header": "2- DHW",
+      "point1": "Domestic Hot Water Storage",
+      "point2": "Fast Heaters For DHW",
+      "point3": "Thermal Solar System"
+    },
+    "endSection": {
+      "header": "<second>Ready to Elevate Your Building’s Performance?</second>",
+      "button": "Get in touch"
+    }
+  },
   "contactPage": {
     "heroSection": {
       "header": "Contact Us",
