@@ -16,7 +16,9 @@ export function NavbarTab({ name }: { name: string }) {
       href={name === "home" ? `/${locale}` : `/${locale}/${name}`}
       className={`text-[1rem] ${
         (path == `/${locale}` && name === "home") ||
-        (path !== `/${locale}` && name !== "home" && path.includes(name))
+        (path !== `/${locale}` &&
+          name !== "home" &&
+          path === `/${locale}/${name}`)
           ? " text-[#A8CF38] "
           : " text-white  "
       } font-[350] hover:animate-pulse`}
