@@ -27,8 +27,8 @@ export function WebsiteHeader() {
     <div
       className={` flex items-center justify-between w-full top-0 left-0 z-50 transition-all duration-300 ${
         isSticky
-          ? "fixed bg-[#0D1421]/80 backdrop-blur-lg px-[2rem] "
-          : "absolute px-[2rem] py-[1rem]"
+          ? "fixed bg-[#0D1421]/80 backdrop-blur-lg p-[2rem] "
+          : "absolute p-[2rem] "
       }`}
     >
       <Image
@@ -36,7 +36,7 @@ export function WebsiteHeader() {
         src="/logo.png"
         width={50}
         height={50}
-        className="w-[8rem] aspect-square"
+        className="w-[7rem] aspect-square"
       />
       <Navbar />
     </div>

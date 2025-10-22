@@ -10,6 +10,8 @@ const navs = [
   "service-solution",
   "clients-partners",
   "interior-architectural",
+  "privacy",
+  "terms",
 ];
 export function Footer() {
   const t = useTranslations("footer");
@@ -33,9 +35,6 @@ export function Footer() {
         ))}
       </div>
       <div className="flex flex-col items-start justify-start gap-[2rem]">
-        <p className="text-[1rem] leading-[1.375rem] font-semibold">
-          {t("forChat")}
-        </p>
         <p className="text-[1rem] leading-[1.375rem] font-semibold">
           {t("email")}
         </p>
