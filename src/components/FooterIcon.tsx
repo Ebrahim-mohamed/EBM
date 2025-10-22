@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function FooterIcon({ name }: { name: string }) {
+export function FooterIcon({ name, to }: { name: string; to: string }) {
   return (
-    <Link href="#">
+    <Link href={to}>
       <Image
         alt="social media icon"
         width={100}

@@ -36,7 +36,7 @@ export function WebsiteHeader() {
         src="/logo.png"
         width={50}
         height={50}
-        className="w-[7rem] aspect-square"
+        className="w-[6rem] aspect-square"
       />
       <Navbar />
     </div>

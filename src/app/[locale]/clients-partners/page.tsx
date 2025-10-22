@@ -19,7 +19,7 @@ export default function ClientsAndPartnersPage() {
         location="clientsAndPartnersPage"
       />
       <AwardSection />
-      <MangersSection />
+      {/* <MangersSection /> */}
       <PartnersSection isNotHomePage />
       <FaqSection />
       <EndSection

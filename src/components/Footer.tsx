@@ -2,7 +2,10 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { FooterIcon } from "./FooterIcon";
 import { FooterNavTab } from "./FooterNavTab";
-const links = ["instagram", "facebook", "x", "tiktok"];
+const links = [
+  { name: "instagram", to: "https://www.instagram.com/ebmksa/" },
+  { name: "facebook", to: "https://www.facebook.com/EBMSaudiArabia/" },
+];
 const navs = [
   "home",
   "about",
@@ -40,7 +43,7 @@ export function Footer() {
         </p>
         <div className="flex items-center justify-center gap-[1rem]">
           {links.map((link) => (
-            <FooterIcon name={link} key={link} />
+            <FooterIcon name={link.name} key={link.name} to={link.to} />
           ))}
         </div>
       </div>
