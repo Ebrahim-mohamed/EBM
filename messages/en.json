@@ -409,7 +409,10 @@
     },
     "professionalKitchenSection": {
       "header": "Professional Kitchen",
-      "des": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice."
+      "des": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice.",
+      "text1": "Extractor hood",
+      "text2": "Ecology units",
+      "text3": "Automatic System for detecting and extinguishing oil fires."
     },
     "heatingAndDhwAndClimateControlSection": {
       "header": "Heating/ DHW/ Climate Control ",
@@ -425,6 +428,46 @@
       "point1": "Domestic Hot Water Storage",
       "point2": "Fast Heaters For DHW",
       "point3": "Thermal Solar System"
+    },
+    "heatPumpSection": {
+      "header": "Heat Pump",
+      "text1": "Air Heat Pump",
+      "text2": "Air Heat Pump",
+      "text3": "Water Heat Pump"
+    },
+    "heatExchangerSection": {
+      "header": "Heat Exchanger",
+      "text1": "Duct Fans",
+      "text2": "Domestic Fans",
+      "text3": "Roof Fans"
+    },
+    "dehumidifierSection": {
+      "header": "Dehumidifier",
+      "text1": "Gasked Plate",
+      "text2": "Brazed Plate",
+      "text3": "Desiccant Dehumidifier"
+    },
+    "airHandlingUnitsSection": {
+      "header": "Air Handling Units",
+      "text1": "Hgenic Air Reneweal",
+      "text2": "Preheating/ Precooling",
+      "text3": "Air Quality Control"
+    },
+    "humidifierSection": {
+      "header": "Humidifier",
+      "text1": "Electric Resistors",
+      "text2": "Immersed Electrodes"
+    },
+    "chillerSection": {
+      "header": "Chiller"
+    },
+    "cracUnitsSection": {
+      "header": "Crac Units",
+      "des": "Air cooled chillers for outdoor installation equipped with scroll compressors and axial fans."
+    },
+    "fanCollsUnitsSection": {
+      "header": "Fan Colls Units",
+      "des": "Dual flow unit with counter-flow exchanger and energy efficient motor for tertiary individual room applications"
     },
     "endSection": {
       "header": "<second>Ready to Elevate Your Building’s Performance?</second>",
