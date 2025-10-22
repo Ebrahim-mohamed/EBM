@@ -429,6 +429,9 @@
       "point2": "Fast Heaters For DHW",
       "point3": "Thermal Solar System"
     },
+    "climateControlHeader": {
+      "header": "3-Climate Control"
+    },
     "heatPumpSection": {
       "header": "Heat Pump",
       "text1": "Air Heat Pump",
@@ -459,7 +462,9 @@
       "text2": "Immersed Electrodes"
     },
     "chillerSection": {
-      "header": "Chiller"
+      "header": "Chiller",
+      "text1": "Electric Resistors",
+      "text2": "Immersed Electrodes"
     },
     "cracUnitsSection": {
       "header": "Crac Units",
