@@ -19,7 +19,7 @@ export default function HomePage() {
         pra={heroT("des")}
         location="homePage"
         button1={heroT("button1")}
-        to1="services-solutions"
+        to1="service-solution"
         button2={heroT("button2")}
         to2="contact"
       />

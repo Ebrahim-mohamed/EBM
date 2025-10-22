@@ -30,7 +30,15 @@ export function ServicesAndSolutionsSection() {
               ))}
             header={t(`serviceHeader${num}`)}
             order={num}
-            to="#"
+            to={
+              num === 1
+                ? "fire-fighting"
+                : num === 2
+                ? "hvac"
+                : num === 3
+                ? "air-population"
+                : "special-projects"
+            }
           />
         ))}
       </div>

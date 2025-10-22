@@ -94,7 +94,7 @@ export function ServiceAndSolutionSection() {
         ))}
       </Swiper>
       <div className="flex justify-center">
-        <LinkButton name={t("button")} to="services-solutions" />
+        <LinkButton name={t("button")} to="service-solution" />
       </div>
     </div>
   );
