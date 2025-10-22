@@ -1,5 +1,6 @@
 import { EndSection } from "@/components/endSection";
 import { Hero } from "@/components/Hero";
+import { FutureSection } from "@/components/homePage/FutureSection";
 import { PartnersSection } from "@/components/homePage/PartnersSection";
 import { ProjectsSection } from "@/components/homePage/ProjectSection";
 import { ServiceAndSolutionSection } from "@/components/homePage/ServiceAndSolutionSection";
@@ -25,7 +26,8 @@ export default function HomePage() {
       <StorySection />
       <ServiceAndSolutionSection />
       <PartnersSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
+      <FutureSection />
       <EndSection
         button={endT("button")}
         header={endT.rich("header", {

@@ -50,6 +50,18 @@
     "projectsSection": {
       "header": "Delivering Impact <second>Through Every Project.</second>"
     },
+    "futureSection": {
+      "header": "<second>Powering a </second>Bold Future",
+      "des": "We are not just participants; we are key enablers of Saudi Vision 2030. Our expertise is foundational to building a sustainable, diversified, and vibrant future for the Kingdom.",
+      "head1": "Thriving Economy",
+      "pra1": "Engineering the infrastructure for giga-projects and industrial cities, fostering non-oil sector growth and creating economic opportunities.",
+      "head2": "Vibrant Society",
+      "pra2": "Ensuring the safety and comfort of new cultural, entertainment, and residential landmarks, enhancing quality of life for all citizens and residents.",
+      "head3": "Sustainable Kingdom",
+      "pra3": "Implementing cutting-edge, energy-efficient HVAC and smart building solutions that significantly reduce carbon footprint and conserve resources.",
+      "head4": "Human Capability",
+      "pra4": "Investing in local talent through advanced training and career development, building a new generation of Saudi engineering leaders."
+    },
     "endSection": {
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
       "button": "Get in touch"
