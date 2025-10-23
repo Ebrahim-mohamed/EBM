@@ -34,12 +34,12 @@ export function ClimateControlComp({
               src={`/hvacPage/HeatingAndDHWAndClimateControlSection/${partName}/${num}.png`}
               className="w-full"
             />
-            {partName !== "cracUnitsSection" &&
+            {/* {partName !== "cracUnitsSection" &&
               partName !== "fanCollsUnitsSection" && (
                 <p className="absolute top-1/2 left-1/2 -translate-1/2 text-white text-[1.7rem] font-medium leading-[1.8rem] text-center">
                   {t(`text${num}`)}
                 </p>
-              )}
+              )} */}
           </div>
         ))}
       </div>

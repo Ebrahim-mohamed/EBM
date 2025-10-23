@@ -5,6 +5,10 @@ import { FooterNavTab } from "./FooterNavTab";
 const links = [
   { name: "instagram", to: "https://www.instagram.com/ebmksa/" },
   { name: "facebook", to: "https://www.facebook.com/EBMSaudiArabia/" },
+  {
+    name: "linkedIn",
+    to: "https://www.linkedin.com/company/energy-building-masters/",
+  },
 ];
 const navs = [
   "home",
