@@ -14,7 +14,7 @@ export function StorySection() {
         })}
         pra={t("des")}
       />
-      <div className="flex gap-[4rem] items-center">
+      <div className="flex gap-[4rem] items-center max-[800px]:flex-col">
         <div className="flex flex-col gap-[2rem] justify-start ">
           <h2 className="text-[1rem] text-white font-[350] ">
             {t("secondHeader")}
@@ -28,12 +28,13 @@ export function StorySection() {
             <LinkButton name={t("button")} to="about" />
           </div>
         </div>
+
         <Image
           alt="story image"
           width={300}
           height={300}
           src="/homePage/story.png"
-          className="w-[70%] aspect-[512/653] rounded-[1.5rem]"
+          className="w-[70%] aspect-[512/653] rounded-[1.5rem] max-[1300px]:w-[100%] max-[1100px]:w-[130%]"
         />
       </div>
     </div>

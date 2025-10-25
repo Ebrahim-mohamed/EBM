@@ -7,7 +7,6 @@ export function TrustBox({ img }: { img: string }) {
       width={200}
       height={200}
       src={`/hvacPage/trustLogos/${img}.png`}
-      className="w-[14rem] h-[4rem]"
     />
   );
 }

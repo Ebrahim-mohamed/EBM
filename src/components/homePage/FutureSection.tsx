@@ -7,7 +7,7 @@ export function FutureSection() {
   const t = useTranslations("homePage.futureSection");
   return (
     <div className="p-[var(--sectionPadding)]  flex flex-col items-center justify-center">
-      <div className="w-[80%]">
+      <div className="w-[80%] max-[800px]:w-full">
         <Header
           header={t.rich("header", {
             second: (chunk) => <span className=" text-[#A8CF38]">{chunk}</span>,

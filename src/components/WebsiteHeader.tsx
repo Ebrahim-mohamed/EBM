@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Navbar } from "./Navbar";
+import { NavbarMobile } from "./NavbarMobile";
 
 export function WebsiteHeader() {
   const [isSticky, setIsSticky] = useState(false);
@@ -22,7 +23,10 @@ export function WebsiteHeader() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  const [isShow, setIsShow] = useState(false);
+  function closeNav() {
+    setIsShow(false);
+  }
   return (
     <div
       className={` flex items-center justify-between w-full top-0 left-0 z-50 transition-all duration-300 ${
@@ -38,7 +42,21 @@ export function WebsiteHeader() {
         height={50}
         className="w-[6rem] aspect-square"
       />
-      <Navbar />
+      <div className="max-[950px]:hidden">
+        <Navbar />
+      </div>
+
+      {isShow && <NavbarMobile onClose={closeNav} />}
+
+      <button onClick={() => setIsShow(true)} className="min-[950px]:hidden">
+        <Image
+          alt="menu icon"
+          width={50}
+          height={50}
+          src="/menu.png"
+          className=" w-[3rem] aspect-square "
+        />
+      </button>
     </div>
   );
 }

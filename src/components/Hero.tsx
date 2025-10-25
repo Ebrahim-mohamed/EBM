@@ -13,7 +13,7 @@ export function Hero(heroProps: heroType) {
       }}
     >
       <h1
-        className={`text-[6rem] text-white font-black leading-[120%] ${
+        className={`text-[6rem] text-white font-black leading-[120%] max-[1100px]:text-[5rem] max-[800px]:text-[3.5rem] ${
           heroProps.isCenter && " text-center "
         } `}
       >

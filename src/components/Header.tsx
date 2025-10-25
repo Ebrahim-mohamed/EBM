@@ -7,7 +7,7 @@ export function Header(headerProps: headerType) {
       } justify-center gap-[0.5rem] mb-[5rem] w-full`}
     >
       <div>
-        <h1 className="text-white text-[4rem] font-black">
+        <h1 className="text-white text-[4rem] font-black max-[1100px]:text-[3.5rem] max-[800px]:text-[2.5rem]">
           {headerProps.header}
         </h1>
         {headerProps.isBr && (

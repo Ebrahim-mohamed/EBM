@@ -4,7 +4,7 @@ import { secondSectionPropsType } from "@/types/FireFightingPage/types";
 export function SectionTowSecondaryPages(props: secondSectionPropsType) {
   return (
     <div
-      className="py-[5rem] px-[15rem] flex items-center justify-center w-full gap-[1.5rem] bg-no-repeat bg-cover  bg-center flex-col"
+      className="py-[5rem] px-[15rem] flex items-center justify-center w-full gap-[1.5rem] bg-no-repeat bg-cover  bg-center flex-col max-[1000px]:px-[3rem]"
       style={{
         backgroundImage: `url(/${props.pageName}/secondBg.png)`,
       }}

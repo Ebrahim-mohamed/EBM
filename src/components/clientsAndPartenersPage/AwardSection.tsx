@@ -4,13 +4,13 @@ import Image from "next/image";
 export function AwardSection() {
   const t = useTranslations("clientsAndPartnersPage.awardSection");
   return (
-    <div className="p-[var(--sectionPadding)] flex w-full items-start justify-between gap-[4rem]">
+    <div className="p-[var(--sectionPadding)] flex w-full items-center justify-between gap-[4rem] max-[950px]:flex-col">
       <Image
         alt="persons image"
         width={600}
         height={300}
         src="/clientsAndPartnersPage/persons.png"
-        className="w-[45%]"
+        className="w-[45%] max-[950px]:w-full"
       />
       <div className="flex flex-col gap-[2rem] text-white font-black flex-1">
         <div>

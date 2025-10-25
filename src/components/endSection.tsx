@@ -9,7 +9,7 @@ export function EndSection(endSectionProps: endSectionType) {
         backgroundImage: `url(/${endSectionProps.pageName}/endSectionBg.png)`,
       }}
     >
-      <h3 className="text-[4rem] text-white font-black text-center">
+      <h3 className="text-[4rem] text-white font-black text-center max-[1000px]:text-[3rem]">
         {endSectionProps.header}
       </h3>
       <LinkButton name={endSectionProps.button} to={endSectionProps.to} />

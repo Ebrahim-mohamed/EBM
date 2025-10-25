@@ -19,9 +19,9 @@ export function OffersSection() {
           width={400}
           height={400}
           src="/aboutPage/offerImage.png"
-          className="w-[50%]"
+          className="w-[50%] max-[1220px]:w-[100%]"
         />
-        <div className="p-[2rem] bg-[#111827] text-white rounded-[0.5rem] shadow-[0_4px_10px_0_rgba(0,0,0,0.15)] flex flex-col gap-[2rem] items-start -ml-[8rem]">
+        <div className="p-[2rem] bg-[#111827] text-white rounded-[0.5rem] shadow-[0_4px_10px_0_rgba(0,0,0,0.15)] flex flex-col gap-[2rem] items-start -ml-[8rem] max-[1220px]:-ml-[30rem]">
           <div>
             <h1 className="text-[2.25rem] text-[#A8CF38] font-black">
               {t("secondHeader")}

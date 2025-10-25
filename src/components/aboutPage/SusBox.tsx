@@ -4,7 +4,7 @@ import Image from "next/image";
 export function SusBox({ name, max }: { name: string; max: number }) {
   const t = useTranslations(`aboutPage.sustainabilitySection`);
   return (
-    <div className=" flex gap-[1rem] items-center ">
+    <div className=" flex gap-[1rem] items-center max-[900px]:items-start  ">
       <Image
         alt="image"
         width={100}

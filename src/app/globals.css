@@ -2,7 +2,16 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+@media (max-width: 1000px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+}
 :root {
   --color-main: #ffffff;
   --color-second: #a8cf38;

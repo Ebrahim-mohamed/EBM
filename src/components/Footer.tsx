@@ -23,7 +23,7 @@ const navs = [
 export function Footer() {
   const t = useTranslations("footer");
   return (
-    <div className="bg-[#0D1421] p-[var(--sectionPadding)] flex items-start justify-between w-full text-white gap-[2rem]">
+    <div className="bg-[#0D1421] p-[var(--sectionPadding)] flex items-start justify-between w-full text-white gap-[2rem] max-[930px]:flex-col">
       <div className="flex flex-col items-start justify-start gap-[1rem]">
         <Image
           alt="logo"

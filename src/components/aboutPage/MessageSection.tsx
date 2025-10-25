@@ -5,8 +5,8 @@ import Image from "next/image";
 export function MessageSection() {
   const t = useTranslations("aboutPage.messageSection");
   return (
-    <div className="p-[var(--sectionPadding)] flex items-start justify-between gap-[5rem]">
-      <div className="flex-1">
+    <div className="p-[var(--sectionPadding)] flex items-start justify-between gap-[5rem] max-[1250px]:flex-col max-[1250px]:items-center ">
+      <div className="flex-1 max-[1250px]:w-full">
         <Image
           alt="message image"
           width={800}
@@ -15,7 +15,7 @@ export function MessageSection() {
           src="/aboutPage/message.png"
         />
       </div>
-      <div className="max-w-[45rem] flex flex-col text-white text-[1.125rem] font-[350]">
+      <div className="max-w-[45rem] flex flex-col text-white text-[1.125rem] font-[350] flex-1">
         <Header
           isNotCenter
           header={t.rich("header", {

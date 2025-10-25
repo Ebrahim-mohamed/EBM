@@ -8,9 +8,11 @@ export function SectorBox({ pra }: { pra: string }) {
         width={300}
         height={300}
         src="/interiorArchitecturalPage/sectorIcon.png"
-        className="w-[4.5rem] aspect-square"
+        className="w-[4.5rem] max-[1300px]:w-[3.5rem] aspect-square"
       />
-      <p className="text-[2.25rem] font-black text-white text-center">{pra}</p>
+      <p className="text-[2.25rem] font-black text-white text-center max-[1300px]:text-[1.8rem] max-[800px]:text-[1.5rem]">
+        {pra}
+      </p>
     </div>
   );
 }

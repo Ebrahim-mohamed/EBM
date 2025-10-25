@@ -50,8 +50,6 @@ const services = [
 
 export function ServiceAndSolutionSection() {
   const t = useTranslations("homePage.servicesAndSolutions");
-
-  // ✅ Correctly typed ref
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
@@ -65,18 +63,41 @@ export function ServiceAndSolutionSection() {
 
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerView={3}
         navigation
-        autoplay={{ delay: 1500, disableOnInteraction: false }}
-        className="mb-[3rem]"
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
+        }}
+        className="mb-[3rem]"
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          480: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 25,
+          },
+          1100: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
         }}
       >
         {services.map((service, index) => (
           <SwiperSlide
             key={index}
+            className="flex justify-center" // ensure centering on narrow screens
             onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
             onMouseLeave={() => swiperRef.current?.autoplay?.start()}
           >

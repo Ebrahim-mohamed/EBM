@@ -5,9 +5,9 @@ import Image from "next/image";
 export function FireFightingComp(props: fireFightingPropsType) {
   const t = useTranslations(`fireFightingPage.${props.location}`);
   return (
-    <div className="p-[var(--sectionPadding)] flex gap-[1rem] justify-between">
+    <div className="p-[var(--sectionPadding)] flex gap-[1rem] justify-between max-[950px]:flex-col">
       <div className="flex flex-col gap-[2.5rem] flex-1">
-        <h1 className="text-[#A8CF38] text-[4rem] font-black leading-[3.125rem]">
+        <h1 className="text-[#A8CF38] text-[4rem] font-black leading-[3.125rem] max-[1000px]:text-[3rem]">
           {t("header1")}
         </h1>
         <p className="text-[1.125rem] font-normal text-white leading-[1.8rem]">
@@ -24,7 +24,7 @@ export function FireFightingComp(props: fireFightingPropsType) {
                   src={`/fireFightingPage/${props.location}/main${num}.png`}
                   className="w-full"
                 />
-                <p className="absolute bottom-10 left-6 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center">
+                <p className="absolute bottom-10 left-6 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center max-[950px]:text-[1.2rem] max-[950px]:left-1/2 max-[950px]:-translate-x-1/2">
                   {t(`text${num}`)}
                 </p>
               </div>
@@ -43,7 +43,7 @@ export function FireFightingComp(props: fireFightingPropsType) {
                   src={`/fireFightingPage/${props.location}/main${num}.png`}
                   className="w-[7.75rem] aspect-[124/143]"
                 />
-                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center z-50">
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center z-50 max-[950px]:text-[1.2]">
                   {t(`text${num}`)}
                 </p>
               </div>
@@ -52,7 +52,7 @@ export function FireFightingComp(props: fireFightingPropsType) {
       </div>
       <div className="bg-[#111827] p-[1.5rem] max-w-[27.3rem] ">
         <div className="mb-[1rem]">
-          <h2 className="text-[#A8CF38] text-[1.5rem] font-black leading-[3.125rem]">
+          <h2 className="text-[#A8CF38] text-[1.5rem] font-black leading-[3.125rem] max-[950px]:text-[1.2rem]">
             {t("header2")}
           </h2>
           {(props.location === "smokeSection" ||

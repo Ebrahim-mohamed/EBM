@@ -5,14 +5,17 @@ export function LinkButton({
   name,
   to,
   isBlack,
+  onClose,
 }: {
   name: string;
   to: string;
   isBlack?: boolean;
+  onClose?: () => void;
 }) {
   const locale = useLocale();
   return (
     <Link
+      onClick={onClose}
       href={`/${locale}/${to}`}
       className={`px-[1rem] py-[0.5rem] ${
         isBlack ? " bg-[#29303A] " : " bg-[#4082BF] "

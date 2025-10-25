@@ -5,7 +5,7 @@ import { AccordionItemComp } from "./AccordionItem";
 export function FaqSection() {
   const t = useTranslations("clientsAndPartnersPage.faqSection");
   return (
-    <div className="p-[var(--sectionPadding)] bg-[#0D1421] flex w-full justify-between items-center gap-[5rem]">
+    <div className="p-[var(--sectionPadding)] bg-[#0D1421] flex w-full justify-between items-center gap-[5rem] max-[950px]:flex-col">
       <div className="text-white w-full">
         <h1 className="text-[4rem] font-black mb-[0.6rem]">
           {t.rich("header", {

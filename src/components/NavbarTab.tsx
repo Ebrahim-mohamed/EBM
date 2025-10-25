@@ -4,17 +4,24 @@ import Link from "next/link";
 import { LinkButton } from "./LinkButton";
 import { usePathname } from "next/navigation";
 
-export function NavbarTab({ name }: { name: string }) {
+export function NavbarTab({
+  name,
+  onClose,
+}: {
+  name: string;
+  onClose?: () => void;
+}) {
   const t = useTranslations("navbar");
   const locale = useLocale();
   const path = usePathname();
   if (name === "contact") {
-    return <LinkButton name={t(name)} to={name} />;
+    return <LinkButton name={t(name)} to={name} onClose={onClose} />;
   }
   return (
     <Link
+      onClick={onClose}
       href={name === "home" ? `/${locale}` : `/${locale}/${name}`}
-      className={`text-[1rem] ${
+      className={`text-[1rem] max-[950px]:text-[1.5rem] ${
         (path == `/${locale}` && name === "home") ||
         (path !== `/${locale}` &&
           name !== "home" &&
