@@ -16,14 +16,18 @@ export function HeatingAndDhwComp({ partName }: { partName: string }) {
       </ul>
       <div className="flex gap-[1rem] mt-auto">
         {Array.from({ length: 3 }, (_, i) => i + 1).map((num) => (
-          <Image
+          <div
+            className="flex-1 rounded-[0.5rem]  bg-white overflow-hidden flex items-center justify-center"
             key={num}
-            alt="image"
-            width={400}
-            height={400}
-            src={`/hvacPage/HeatingAndDHWAndClimateControlSection/${partName}/${num}.png`}
-            className="flex-1 rounded-[0.5rem] "
-          />
+          >
+            <Image
+              alt="image"
+              width={400}
+              height={400}
+              src={`/hvacPage/HeatingAndDHWAndClimateControlSection/${partName}/${num}.png`}
+              className=" w-full"
+            />
+          </div>
         ))}
       </div>
     </div>

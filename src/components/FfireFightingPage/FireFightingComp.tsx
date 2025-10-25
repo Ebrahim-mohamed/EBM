@@ -16,21 +16,26 @@ export function FireFightingComp(props: fireFightingPropsType) {
         <div className="flex gap-[1rem]">
           {props.location !== "smokeFansSection" &&
             Array.from({ length: 2 }, (_, i) => i + 1).map((num) => (
-              <Image
-                alt="image"
-                width={500}
-                height={500}
-                key={num}
-                src={`/fireFightingPage/${props.location}/main${num}.png`}
-                className="flex-1"
-              />
+              <div key={num} className="flex-1 relative">
+                <Image
+                  alt="image"
+                  width={500}
+                  height={500}
+                  src={`/fireFightingPage/${props.location}/main${num}.png`}
+                  className="w-full"
+                />
+                <p className="absolute bottom-10 left-6 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center">
+                  {t(`text${num}`)}
+                </p>
+              </div>
             ))}
           {props.location === "smokeFansSection" &&
             Array.from({ length: 2 }, (_, i) => i + 1).map((num) => (
               <div
                 key={num}
-                className="flex w-[30%] items-center justify-center p-[1rem] bg-[#FFFFFFCC]"
+                className="flex w-[30%] items-center justify-center p-[1rem] bg-white relative rounded-[0.5rem]"
               >
+                <div className="absolute top-0 left-0 h-full w-full bg-[#0005]"></div>
                 <Image
                   alt="image"
                   width={500}
@@ -38,6 +43,9 @@ export function FireFightingComp(props: fireFightingPropsType) {
                   src={`/fireFightingPage/${props.location}/main${num}.png`}
                   className="w-[7.75rem] aspect-[124/143]"
                 />
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center z-50">
+                  {t(`text${num}`)}
+                </p>
               </div>
             ))}
         </div>

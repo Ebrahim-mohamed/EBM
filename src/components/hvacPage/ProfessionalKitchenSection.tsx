@@ -17,9 +17,9 @@ export function ProfessionalKitchenSection() {
               src={`/hvacPage/ProfessionalKitchenSection/${num}.png`}
               className="w-full"
             />
-            {/* <p className="absolute top-1/2 left-1/2 -translate-1/2 text-white text-[1.7rem] font-medium leading-[1.8rem] text-center">
+            <p className="absolute top-1/2 left-1/2 -translate-1/2 text-white text-[1.7rem] font-medium leading-[1.8rem] text-center">
               {t(`text${num}`)}
-            </p> */}
+            </p>
           </div>
         ))}
       </div>

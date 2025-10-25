@@ -25,8 +25,11 @@ export function ClimateControlComp({
         {Array.from({ length: imagesNumber }, (_, i) => i + 1).map((num) => (
           <div
             key={num}
-            className="relative flex-1 rounded-[0.5rem] overflow-hidden max-w-[10rem]"
+            className="relative flex-1 rounded-[0.5rem] overflow-hidden max-w-[10rem] bg-white flex items-center justify-center"
           >
+            {partName === "dehumidifierSection" && (
+              <div className="absolute top-0 left-0 h-full w-full bg-[#141E2C99]"></div>
+            )}
             <Image
               alt="image"
               width={400}
@@ -34,12 +37,13 @@ export function ClimateControlComp({
               src={`/hvacPage/HeatingAndDHWAndClimateControlSection/${partName}/${num}.png`}
               className="w-full"
             />
-            {/* {partName !== "cracUnitsSection" &&
-              partName !== "fanCollsUnitsSection" && (
-                <p className="absolute top-1/2 left-1/2 -translate-1/2 text-white text-[1.7rem] font-medium leading-[1.8rem] text-center">
+            {partName !== "cracUnitsSection" &&
+              partName !== "fanCollsUnitsSection" &&
+              partName !== "chillerSection" && (
+                <p className="absolute top-1/2 left-1/2 -translate-1/2 text-white text-[1rem] font-medium leading-[1.8rem] text-center">
                   {t(`text${num}`)}
                 </p>
-              )} */}
+              )}
           </div>
         ))}
       </div>
