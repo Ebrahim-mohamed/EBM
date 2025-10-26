@@ -7,7 +7,7 @@ export function PartnersBox({ img }: { img: string }) {
       width={400}
       height={200}
       src={`/homePage/partnersLogos/${img}.png`}
-      className="w-full max-[650px]:min-w-[9rem]"
+      className="max-[650px]:min-w-[9rem]"
     />
   );
 }
