@@ -15,7 +15,7 @@ export function GallerySlider() {
   const images = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
   return (
-    <div className="flex flex-row items-center justify-center gap-4 min-[550px]:h-[400px] md:h-[500px] max-[550px]:flex-col">
+    <div className="flex flex-row items-center justify-center gap-4 h-fit md:h-[500px] max-[550px]:flex-col">
       {/* Main Slider */}
       <Swiper
         modules={[FreeMode, Navigation, Thumbs]}

@@ -13,7 +13,7 @@ export function SectorsSection() {
       />
       <div className="flex items-start justify-between w-full max-[650px]:flex-wrap gap-[1.5rem]">
         {Array.from({ length: 5 }, (_, i) => i + 1).map((num) => (
-          <SectorBox pra={t(`sector${num}`)} key={num} />
+          <SectorBox pra={t(`sector${num}`)} key={num} img={num} />
         ))}
       </div>
     </div>
