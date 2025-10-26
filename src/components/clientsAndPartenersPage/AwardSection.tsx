@@ -15,7 +15,7 @@ export function AwardSection() {
       <div className="flex flex-col gap-[2rem] text-white font-black flex-1">
         <div>
           <h1 className="text-[#A8CF38] text-[1.5rem] ">{t("header")}</h1>
-          <p className="text-[3rem]">
+          <p className="text-[3rem] max-[500px]:text-[2.5rem]">
             {t.rich("des", {
               second: (chunk) => (
                 <span className="text-[#A8CF38]">{chunk}</span>

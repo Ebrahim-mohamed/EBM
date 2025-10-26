@@ -7,8 +7,8 @@ export function ServiceBox({ serviceNum }: { serviceNum: number }) {
   );
   return (
     <div
-      className={`flex items-start justify-between w-full gap-[4rem]  ${
-        serviceNum % 2 === 0 && " flex-row-reverse "
+      className={`flex items-start justify-between w-full gap-[4rem]  max-[650px]:flex-col ${
+        serviceNum % 2 === 0 && " flex-row-reverse max-[650px]:flex-col"
       }`}
     >
       <div className="flex flex-1 items-stretch gap-[1rem]">

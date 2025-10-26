@@ -24,7 +24,7 @@ export function FireFightingComp(props: fireFightingPropsType) {
                   src={`/fireFightingPage/${props.location}/main${num}.png`}
                   className="w-full"
                 />
-                <p className="absolute bottom-10 left-6 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center max-[950px]:text-[1.2rem] max-[950px]:left-1/2 max-[950px]:-translate-x-1/2">
+                <p className="absolute bottom-10 left-6 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center max-[950px]:text-[1.2rem] max-[950px]:left-1/2 max-[950px]:-translate-x-1/2 max-[400px]:hidden">
                   {t(`text${num}`)}
                 </p>
               </div>
@@ -43,7 +43,7 @@ export function FireFightingComp(props: fireFightingPropsType) {
                   src={`/fireFightingPage/${props.location}/main${num}.png`}
                   className="w-[7.75rem] aspect-[124/143]"
                 />
-                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center z-50 max-[950px]:text-[1.2]">
+                <p className="absolute top-1/2 left-1/2 -translate-x-1/2 text-white text-[1.5rem] font-medium leading-[1.8rem] text-center z-20 max-[950px]:text-[1.2] max-[400px]:hidden">
                   {t(`text${num}`)}
                 </p>
               </div>

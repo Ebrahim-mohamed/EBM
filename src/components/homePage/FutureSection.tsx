@@ -16,7 +16,7 @@ export function FutureSection() {
           isNotCenter
         />
         <div className="flex gap-[2rem] items-stretch justify-center ">
-          <div>
+          <div className="max-[550px]:hidden">
             <div className="relative flex flex-col justify-between h-[87%] mt-[0.8rem]">
               <div className=" absolute w-[0.07rem] h-full  bg-[#4082BF] left-1/2"></div>
               {Array.from({ length: 4 }, (_, i) => i + 1).map((num) => (

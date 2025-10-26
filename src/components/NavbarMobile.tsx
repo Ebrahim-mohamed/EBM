@@ -13,7 +13,7 @@ const navbarTabs = [
 ];
 export function NavbarMobile({ onClose }: { onClose: () => void }) {
   return (
-    <div className="flex justify-start items-start absolute top-0 left-0 h-dvh w-dvw bg-black p-[2rem]">
+    <div className="flex justify-start items-start absolute top-0 left-0 h-dvh w-dvw bg-black p-[2rem] z-100">
       <button onClick={onClose}>
         <Image
           alt="close icon"

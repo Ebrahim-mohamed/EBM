@@ -9,7 +9,7 @@ export function ContactInformationSection() {
   const t = useTranslations("contactPage.contactInfo");
   return (
     <div className="p-[var(--sectionPadding)] flex w-full items-start justify-between  max-[1250px]:flex-col">
-      <h1 className="text-[4rem] text-[#A8CF38] font-black max-[1250px]:mb-[1.5rem]">
+      <h1 className="text-[4rem] text-[#A8CF38] font-black max-[1250px]:mb-[1.5rem] max-[600px]:text-[2.5rem] ">
         {t("header")}
       </h1>
       <div className="flex flex-1 justify-end">

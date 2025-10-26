@@ -5,7 +5,7 @@ export function WhySection() {
   return (
     <div className="p-[var(--sectionPadding)] flex items-start gap-[5rem] text-white max-[1280px]:flex-col">
       <div className="max-w-[38rem]">
-        <h1 className=" text-[4rem] font-black">
+        <h1 className=" text-[4rem] font-black max-[700px]:text-[3rem] max-[500px]:text-[2.5rem]">
           {t.rich("header", {
             second: (chunk) => <span className="text-[#A8CF38]">{chunk}</span>,
           })}

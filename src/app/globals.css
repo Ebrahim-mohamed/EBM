@@ -12,6 +12,11 @@
     font-size: 80%;
   }
 }
+@media (max-width: 650px) {
+  :root {
+    --sectionPadding: 3rem !important;
+  }
+}
 :root {
   --color-main: #ffffff;
   --color-second: #a8cf38;

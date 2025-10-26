@@ -13,14 +13,18 @@ export function Hero(heroProps: heroType) {
       }}
     >
       <h1
-        className={`text-[6rem] text-white font-black leading-[120%] max-[1100px]:text-[5rem] max-[800px]:text-[3.5rem] ${
+        className={`text-[6rem] text-white font-black leading-[120%] max-[1100px]:text-[5rem] max-[800px]:text-[3.5rem]  ${
           heroProps.isCenter && " text-center "
         } `}
       >
         {heroProps.header}
       </h1>
       {heroProps.pra && (
-        <p className=" text-[1.5rem] font-[350] leading-[2.4rem] text-white">
+        <p
+          className={` text-[1.5rem] font-[350] leading-[2.4rem] text-white ${
+            heroProps.isCenter ? " text-center " : "  "
+          } `}
+        >
           {heroProps.pra}
         </p>
       )}

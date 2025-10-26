@@ -17,12 +17,12 @@ export function WhoSection() {
         />
         <p className="mb-[1.5rem] leading-[1.8rem]">{t("pra")}</p>
       </div>
-      <div className="flex-1 flex h-full gap-[1rem] justify-end max-[1220px]:flex-col max-[1220px]:w-[80%] ">
-        <div className="flex min-[1220px]:flex-col gap-[1rem] mt-[4rem] max-[1220px]:mt-0 ">
+      <div className="flex-1 flex h-full gap-[1rem] justify-end max-[1220px]:flex-col max-[1220px]:w-[80%] max-[450px]:w-full">
+        <div className="flex min-[1220px]:flex-col gap-[1rem] mt-[4rem] max-[1220px]:mt-0 max-[450px]:items-center max-[450px]:justify-center">
           <WhoImage img="1" />
           <WhoImage img="2" />
         </div>
-        <div className="flex min-[1220px]:flex-col gap-[1rem] ">
+        <div className="flex min-[1220px]:flex-col gap-[1rem] max-[450px]:items-center max-[450px]:justify-center">
           <WhoImage img="3" />
           <WhoImage img="4" />
         </div>

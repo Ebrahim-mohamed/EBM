@@ -40,7 +40,7 @@ export function WebsiteHeader() {
         src="/logo.png"
         width={50}
         height={50}
-        className="w-[6rem] aspect-square"
+        className="w-[6rem] aspect-square max-[550px]:w-[4.5rem]"
       />
       <div className="max-[950px]:hidden">
         <Navbar />

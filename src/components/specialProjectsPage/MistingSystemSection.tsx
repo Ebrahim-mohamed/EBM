@@ -4,7 +4,7 @@ import Image from "next/image";
 export function MistingSystemSection() {
   const t = useTranslations("specialProjectsPage.mistingSystemsSection");
   return (
-    <div className="flex items-center justify-between w-full gap-[4rem] p-[var(--sectionPadding)]">
+    <div className="flex items-center justify-between w-full gap-[4rem] p-[var(--sectionPadding)] max-[750px]:flex-col-reverse">
       <div>
         <h1 className="text-[2.5rem] font-black text-[#A8CF38] mb-[2rem]">
           {t("header")}
@@ -27,7 +27,7 @@ export function MistingSystemSection() {
         width={500}
         height={500}
         src="/specialProjectsPage/misting.png"
-        className="w-[60%] rounded-[0.5rem] border border-white"
+        className="w-[60%] rounded-[0.5rem] border border-white max-[750px]:w-full"
       />
     </div>
   );

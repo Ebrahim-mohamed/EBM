@@ -15,7 +15,7 @@ export function GallerySlider() {
   const images = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
   return (
-    <div className="flex flex-row items-center justify-center gap-4 h-[400px] md:h-[500px]">
+    <div className="flex flex-row items-center justify-center gap-4 min-[550px]:h-[400px] md:h-[500px] max-[550px]:flex-col">
       {/* Main Slider */}
       <Swiper
         modules={[FreeMode, Navigation, Thumbs]}
@@ -23,7 +23,7 @@ export function GallerySlider() {
         navigation
         thumbs={{ swiper: thumbsSwiper }}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)} // ✅ update active thumbnail
-        className="w-[70%] h-full rounded-2xl overflow-hidden"
+        className="w-[70%] h-full rounded-2xl overflow-hidden max-[550px]:w-full"
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
@@ -39,13 +39,13 @@ export function GallerySlider() {
       {/* Thumbnails Slider */}
       <Swiper
         onSwiper={setThumbsSwiper}
-        direction="vertical"
+        direction={window.innerWidth >= 550 ? "vertical" : "horizontal"}
         spaceBetween={10}
         slidesPerView={4}
         freeMode={{ enabled: true }}
         watchSlidesProgress
         modules={[FreeMode, Navigation, Thumbs]}
-        className="w-[25%] h-full rounded-xl swiper-thumbs"
+        className="w-[25%] h-full rounded-xl swiper-thumbs max-[550px]:w-full"
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>

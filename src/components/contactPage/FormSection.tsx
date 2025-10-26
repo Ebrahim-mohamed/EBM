@@ -19,7 +19,7 @@ export function FormSection() {
   }
   return (
     <form
-      className="flex flex-col gap-[1rem] justify-center w-[50%] max-[950px]:w-[70%]"
+      className="flex flex-col gap-[1rem] justify-center w-[50%] max-[950px]:w-[70%] max-[550px]:w-[80%]"
       onSubmit={handleSubmit(contactSubmit)}
     >
       {inputs.map((input) => (

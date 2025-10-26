@@ -16,7 +16,7 @@ export function YearVision() {
           })}
           pra={t("des")}
         />
-        <div className="grid grid-cols-2 gap-x-[1rem] gap-y-[2rem]">
+        <div className="grid grid-cols-2 gap-x-[1rem] gap-y-[2rem] max-[500px]:grid-cols-1">
           {Array.from({ length: 4 }, (_, i) => i + 1).map((num) => (
             <YearVisionBox content={t(`pra${num}`)} key={num} />
           ))}

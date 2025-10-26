@@ -16,7 +16,7 @@ export function PartnersSection({
           second: (chunk) => <span className=" text-[#A8CF38]">{chunk}</span>,
         })}
       />
-      <div className="grid grid-cols-4 gap-[4rem] items-center justify-center justify-self-center mb-[5rem]">
+      <div className="grid grid-cols-4 gap-[4rem] place-items-center mb-[5rem] max-[400px]:grid-cols-3 ">
         {Array.from({ length: 16 }, (_, i) => i + 1).map((num) => (
           <PartnersBox key={num.toString()} img={num.toString()} />
         ))}
