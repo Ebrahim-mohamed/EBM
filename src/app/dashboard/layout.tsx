@@ -9,6 +9,7 @@ export default async function DashboardLayout({ children }: Props) {
     <html>
       <body className="flex gap-[2rem]">
         <DashboardNavbar />
+
         {children}
       </body>
     </html>

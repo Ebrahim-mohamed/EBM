@@ -3,7 +3,7 @@ import { NavLink } from "./NavLink";
 
 export function DashboardNavbar() {
   return (
-    <div className="flex flex-col gap-[1.5rem] p-[2rem] border-r-[2px] border-r-black h-dvh">
+    <div className="flex flex-col gap-[1.5rem] p-[2rem] border-r-[2px] border-r-black h-dvh min-w-[14rem]">
       <div className="bg-black">
         <Image
           alt="logo image"
