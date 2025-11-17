@@ -9,6 +9,7 @@ const navbarTabs = [
   "service-solution",
   "clients-partners",
   "interior-architectural",
+  "lang",
   "contact",
 ];
 export function NavbarMobile({ onClose }: { onClose: () => void }) {

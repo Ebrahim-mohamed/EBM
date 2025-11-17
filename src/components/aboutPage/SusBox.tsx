@@ -1,10 +1,15 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
 export function SusBox({ name, max }: { name: string; max: number }) {
   const t = useTranslations(`aboutPage.sustainabilitySection`);
+  const locale = useLocale();
   return (
-    <div className=" flex gap-[1rem] items-center max-[900px]:items-start  ">
+    <div
+      className={` flex  ${
+        locale === "en" ? " gap-[1rem] " : " gap-[2rem] "
+      }  items-center max-[900px]:items-start  `}
+    >
       <Image
         alt="image"
         width={100}

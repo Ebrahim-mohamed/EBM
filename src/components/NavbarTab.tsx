@@ -3,6 +3,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { LinkButton } from "./LinkButton";
 import { usePathname } from "next/navigation";
+import { LanguageButton } from "./LanguageButtotn";
 
 export function NavbarTab({
   name,
@@ -16,6 +17,9 @@ export function NavbarTab({
   const path = usePathname();
   if (name === "contact") {
     return <LinkButton name={t(name)} to={name} onClose={onClose} />;
+  }
+  if (name === "lang") {
+    return <LanguageButton />;
   }
   return (
     <Link

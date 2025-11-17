@@ -29,7 +29,6 @@ export function MessageSection() {
           <p>{t("pra2")}</p>
         </div>
         <div>
-          <p>{t("person")}</p>
           <p>{t("jop")}</p>
           <p>{t("signature")}</p>
         </div>

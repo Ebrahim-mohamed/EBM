@@ -1,6 +1,6 @@
 "use client";
 import { serviceAndSolutionSectionBoxType } from "@/types/homePage/types";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 
 export function ServiceAndSolutionSectionBox(
@@ -8,6 +8,7 @@ export function ServiceAndSolutionSectionBox(
 ) {
   // const [isIn, setIsIn] = useState(false);
   const locale = useLocale();
+  const t = useTranslations("homePage.servicesAndSolutions");
   return (
     <Link
       href={`/${locale}/${service.to}`}
@@ -16,7 +17,7 @@ export function ServiceAndSolutionSectionBox(
       // onMouseEnter={() => setIsIn(true)}
       // onMouseOut={() => setIsIn(false)}
     >
-      <h2 className={`text-[1.5rem] font-black `}>{service.header}</h2>
+      <h2 className={`text-[1.5rem] font-black `}>{t(service.header)}</h2>
       {/* <p
         className={`text-[1rem] font-bold absolute transition-all duration-[0.5s] ${
           isIn ? " translate-y-0 " : " translate-y-[130%] "

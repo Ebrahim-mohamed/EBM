@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { LinkButton } from "../LinkButton";
 import { SAndSBoxType } from "@/types/ServicesAndSolutionsPage/types";
+import { useLocale } from "next-intl";
 
 export function SAndSBox(sASProps: SAndSBoxType) {
+  const locale = useLocale();
   return (
     <div
       className={`flex items-start justify-between w-full gap-[4rem]  max-[950px]:flex-col ${
@@ -17,7 +19,11 @@ export function SAndSBox(sASProps: SAndSBoxType) {
         className="w-[50%] rounded-[0.5rem] max-[950px]:w-full"
       />
       <div className="flex flex-col gap-[2rem] flex-1 items-start">
-        <h1 className="border-l-[0.2rem] border-[#A8CF38] text-[#A8CF38] text-[2rem] font-bold px-[1rem]">
+        <h1
+          className={`${
+            locale === "en" ? " border-l-[0.2rem] " : " border-r-[0.2rem] "
+          } border-[#A8CF38] text-[#A8CF38] text-[2rem] font-bold px-[1rem]`}
+        >
           {sASProps.header}
         </h1>
         <p className="text-white text-[1.125rem] font-normal leading-[1.8rem] ">

@@ -27,7 +27,7 @@
   "homePage": {
     "heroSection": {
       "header": "Empowering Sustainable & <second>Safe Environment</second>",
-      "des": "EMB is a leader in Fire protection, HVAC, and Electromechanical system, over 15 years of experience in supply, installation, and maintenance,",
+      "des": "EBM is a leader in Fire protection, HVAC, and Electromechanical system, over 15 years of experience in supply, installation, and maintenance .",
       "button1": "Explore Solution",
       "button2": "Contact Us"
     },
@@ -35,15 +35,19 @@
       "header": "Our <second>Story</second> and <second>Commitment</second>",
       "des": "About EBM",
       "secondHeader": "Founded with a vision to deliver exceptional engineering solutions, EBM has grown into a trusted partner for complex projects across the region. We are built on a foundation of integrity, innovation, and an unwavering commitment to quality.",
-      "pra1": "Our Mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
-      "pra2": "Our Mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
-      "pra3": "Our Mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
+      "pra1": "Our mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
+      "pra2": "Our vision: EBM Engineering actively endorses Saudi Arabia's Vision 2030 by aligning its operations with the vision's goals for economic diversification and sustainable development. ",
+      "pra3": "sustainability : At EBM Engineering, we believe that our world depends on clean, healthy air and that our solutions must be both energy-efficient and environmentally responsible. ",
       "button": "About Us"
     },
     "servicesAndSolutions": {
       "header": "<second>Solution</second> & <second>Services</second>",
       "des": "Serving Clients with sincerity and commitment, more that a decade",
-      "button": "See more"
+      "button": "See more",
+      "hvac": "HVAC Solution",
+      "fire": "Fire Fighting",
+      "air": "Air population",
+      "spe": "Special Projects"
     },
     "partnersSection": {
       "header": "<second>We are proud to be</second> trusted by",
@@ -80,8 +84,8 @@
     "messageSection": {
       "header": "GM’s <second>Message</second>",
       "des": "Welcome to EBM Saudi Arabia",
-      "pra1": "From the very outset, I had a vision of making EBM Saudi Arabia a notable name in the industry in which we operate and provide services. We’ve grown steadily and eventually established an extensive network of satisfied customer range across Saudi Arabia. Our self-made philosophy allowed us to associate impeccably with our clients to be their partner of choice.",
-      "pra2": "From the inception, EBM Saudi Arabia has seized opportunities through unprecedented technical expertise, reliability and competitiveness to deliver cost-effective and substantial assistance in the supply, installation, testing & commissioning and preventive maintenance for HVAC systems, Electromechanical and Fire & Safety Protection for commercial and industrial projects. During our journey, we have never compromised on the professionalism, and quality of the services that we offer, this rewarded us the strength to overwhelm the competition and attain greater glory in the ever-changing global business landscape",
+      "pra1": "From the very beginning, EBM Engineering Saudi Arabia set out to become a trusted name in our industry. Guided by a philosophy of reliability and professionalism, we've steadily expanded our network of satisfied clients across the Kingdom.",
+      "pra2": "Our expertise spans supply, installation, testing & commissioning, and preventive maintenance of HVAC systems, Electromechanical works, and Fire & Safety Protection for commercial and industrial projects. By combining technical excellence with cost-effective solutions, we've consistently delivered value without compromising on quality. This commitment has allowed us to stand out, overcome competition, and grow stronger in today's dynamic business landscape.",
       "person": "-Mazen Sheet",
       "jop": "Chairman",
       "signature": "Mazen Sheet"
@@ -89,7 +93,7 @@
     "whoSection": {
       "header": "<second>Who</second> We Are",
       "des": "EBM: Project done. Perfectly.",
-      "pra": "Energy & Building Masters (EBM) is a leading Middle East-based company specializing in comprehensive HVAC, Electromechanical, and Fire & Safety Protection services for commercial and industrial projects. EBM Saudi Arabia's core offering includes the full project lifecycle: supply, installation, testing & commissioning, and preventive maintenance. Since its inception, EBM has maintained a strong, long-term reputation by providing cost-effective and practical solutions that uphold high quality standards. This is achieved through an integrated model driven by a multidimensional team of professionals with over 15 years of industry excellence, allowing EBM to efficiently undertake projects of any scale—from conception to handover and subsequent upgrades—while maintaining dedication, integrity, and a commitment to being environmentally and socially responsible."
+      "pra": "EBM is a leading Middle East-based company specializing in comprehensive HVAC, Electromechanical, and Fire & Safety Protection services for commercial and industrial projects. EBM Saudi Arabia's core offering includes the full project lifecycle: supply, installation, testing & commissioning, and preventive maintenance. Since its inception, EBM has maintained a strong, long-term reputation by providing cost-effective and practical solutions that uphold high quality standards. This is achieved through an integrated model driven by a multidimensional team of professionals with over 15 years of industry excellence, allowing EBM to efficiently undertake projects of any scale—from conception to handover and subsequent upgrades—while maintaining dedication, integrity, and a commitment to being environmentally and socially responsible."
     },
     "visionAndMissionSection": {
       "visionHeader": "Vision",
@@ -122,12 +126,14 @@
     },
     "visionSection": {
       "header": "<second>2030</second> Vision",
-      "des": "Lorem ipsum dolor sit amet consectetur. Fermentum diam in sit",
+      "des": "EBM Engineering actively endorses Saudi Arabia's Vision 2030 by aligning its operations with the vision's goals for economic diversification and sustainable development. This commitment is demonstrated by EBM's achievement of internationally recognized ISO certifications for quality (9001:2015), environmental management 14001:2015, and occupational health & safety 45001:2018.",
       "imagePra": "“Through our commitment to quality, compliance, and innovation, EBM is not only meeting the current demands of Vision 2030 but also preparing for its future.",
-      "pra1": "Lorem ipsum dolor sit amet consectetur. Vulputate.",
-      "pra2": "Lorem ipsum dolor sit amet consectetur. Vulputate.",
-      "pra3": "Lorem ipsum dolor sit amet consectetur. Vulputate.",
-      "pra4": "Lorem ipsum dolor sit amet consectetur. Vulputate."
+      "pra1": "We have delivered reliable solutions to many of the Vision’s flagship developments across various sectors, including NEOM, The Red Sea, Diriyah Gate, and Qiddiya",
+      "pra2": "We continue to strengthen our relationships with leading international manufacturers to ensure our offerings meet the highest global standards.",
+      "pra3": "We continuously evolve our product range to meet the growing demands of Vision 2030 projects in terms of sustainability, efficiency, and safety.",
+      "head1": "Supplying Key National Projects",
+      "head2": "Expanding Partnerships",
+      "head3": "Product Innovation And Readiness"
     },
     "offersSection": {
       "header": "<second>What</second> EBM <second>Offers</second>",
@@ -153,13 +159,13 @@
     "servicesAndSolutionsSection": {
       "header": "Our <second>Solutions</second> and <second>Services</second>",
       "serviceHeader1": "Fire Protection & Fire Fighting",
-      "serviceDes1": "EBM Engineering deals with a wide range of fire & smoke curtains and fire protection products to protect every type of building application. | From protecting means of escape and boundary protection to provide a building with a system that offers effective fire and smoke compartmentation. | We offer various solutions to architects, engineers, consultants and designers providing the ability to design complex buildings that adhere to fire regulations and offer protection against fire and smoke.",
+      "serviceDes1": "At EBM Engineering, we lead the industry in providing the best brands in fire protection solutions. | Our top-tier products offer unmatched safety and security against fire hazards. | With a commitment to excellence, we safeguard your spaces, ensuring peace of mind in the face of fire-related risks.",
       "serviceButton1": "Explore",
       "serviceHeader2": "HVAC Solution",
-      "serviceDes2": "Modern HVAC systems are designed to• Introduce fresh outdoor air into indoor spaces• Dilute and remove airborne pollutants and CO₂• Control humidity levels and prevent condensation• Support energy efficiency through heat recovery and smart controls• Comply with ASHRAE and local ventilation standards",
+      "serviceDes2": "We at EBM Engineering take pride in offering a curated selection of HVAC products featuring the industry’s best brands. | Our commitment to excellence means you’ll find top-quality heating, ventilation, electrochemical and air conditioning solutions for your every need. | Your journey to superior HVAC starts here.",
       "serviceButton2": "Explore",
       "serviceHeader3": "Air Population Control",
-      "serviceDes3": "As part of our commitment to environmental stewardship and sustainable development, EBM Engineering proudly introduces Air Pollution Control as a core function within our operations in the Kingdom of Saudi Arabia. This division is dedicated to providing advanced solutions that reduce industrial emissions, improve air quality, and ensure compliance with local and international environmental standards. Leveraging cutting- edge technology and industry expertise, our systems are designed to capture and control airborne pollutants efficiently supporting cleaner production processes and healthier communities.",
+      "serviceDes3": "As part of our commitment to sustainability, EBM Engineering introduces Air Pollution Control as a key function in Saudi Arabia. | This division delivers advanced solutions to reduce industrial emissions, enhance air quality, and meet environmental standards, aligning with Vision 2030 for a greener, more sustainable future.",
       "serviceButton3": "Explore",
       "serviceHeader4": "Special Systems",
       "serviceDes4": "Discover EBM’s range of specialized engineering products, including high-efficiency misting systems, industrial boilers, diesel gensets, and sustainable energy solutions — all designed to enhance performance, safety, and comfort across every project.",
@@ -190,8 +196,8 @@
     "divisionSection": {
       "header": "About Us",
       "des": "EBM’s <second>Interior Architectural</second> Division",
-      "content1": "EBM’s Interior Architectural Division is led by a team of specialists with more than twenty years of experience in architectural systems across the Middle East and beyond. We deliver systems that protect buildings, enhance interiors, and contribute to long-term performance.",
-      "content2": "From healthcare corridors to transport hubs, we combine international product quality with regional expertise, giving consultants, contractors, and clients solutions they can trust, rely on, and count on for lasting value."
+      "content1": "EBM’s Interior Architectural Division is led by a team with more than twenty years of experience in architectural systems across the Middle East and beyond. We have worked on some of the region’s most demanding projects, giving us a clear understanding of what it takes to deliver systems that are compliant, practical, and built to last.",
+      "content2": "We do more than supply products. We provide guidance, technical expertise, and support through every stage of a project, from design to installation and handover. By combining international product quality with regional project knowledge, we deliver solutions that clients can rely on for long-term value."
     },
     "coreSection": {
       "header": "Our Core <second>Products</second>"
@@ -206,13 +212,13 @@
     },
     "whySection": {
       "header": "Why Choose <second>EBM</second>?",
-      "des": "Working with EBM means smoother delivery, less risk, and solutions that perform.",
-      "pra1": "✅ Proven systems trusted in landmark projects across the GCC",
-      "pra2": "✅ More than twenty years of architectural expertise",
-      "pra3": "✅ Customer-first approach with practical solutions that work in the field",
-      "pra4": "✅ Access to innovative global products",
-      "pra5": "✅ Complete support: design, supply, installation, service",
-      "pra6": "✅ Solutions tested for GCC standards, climate, and compliance"
+      "des": "Choosing the right partner is as important as choosing the right product. At EBM we combine experience, global partnerships, and regional knowledge with a customer-first approach.",
+      "pra1": "✅ Proven systems trusted across GCC projects",
+      "pra2": "✅ A team with more than twenty years of expertise",
+      "pra3": "✅ Customer centric – practical solutions that fit real project needs",
+      "pra4": "✅ Access to leading international products",
+      "pra5": "✅ Support from design through to aftercare",
+      "pra6": "✅ Systems tested for GCC standards, climate, and compliance"
     },
     "endSection": {
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",
@@ -237,13 +243,13 @@
       "header": "Frequently Asked <second>Questions</second>",
       "des": "We've answered some of our most common questions to provide you with the information you need.",
       "que1": "Who are EBM’s typical clients?",
-      "ans1": "Who are EBM’s typical clients?",
+      "ans1": "Major developers and owners of complex commercial, residential, and mixed-use projects. Government and semi-government entities requiring advanced fire protection and electromechanical systems.  Hospitals, banks, universities, and other facilities that depend on specialized HVAC and life-safety solutions.  Industrial sites seeking integrated environmental compliance, air-quality control, and operational-efficiency solutions.",
       "que2": "How does EBM choose its partners?",
-      "ans2": "How does EBM choose its partners?",
+      "ans2": "EBM selects partners based on proven technical expertise and the ability to meet rigorous engineering, safety, and quality benchmarks.Priority is given to vendors and suppliers with reliable delivery performance, strong compliance records, and internationally certified products. Partnerships are formed with companies that demonstrate financial stability, long-term reliability, and capability to support large-scale projects.EBM favors partners whose solutions align with sustainability standards, innovation goals, and Vision 2030 requirements.",
       "que3": "Can small businesses partner with EBM?",
-      "ans3": "Can small businesses partner with EBM?",
+      "ans3": "Yes, small businesses can partner with EBM, provided they meet the company’s technical, quality, and compliance requirements. EBM evaluates partners based on capability and reliability, not size, and welcomes SMEs that offer specialized products, innovative solutions, or strong niche expertise.",
       "que4": "What industries does EBM support?",
-      "ans4": "What industries does EBM support?",
+      "ans4": "EBM supports a wide range of industries that rely on advanced electromechanical, HVAC, and fire-protection solutions, including:Commercial and residential construction (towers, complexes, mixed-use developments).Government and public-sector facilities.Healthcare, banking, and education.Industrial plants, manufacturing sites, and utilities.",
       "que5": "How can I become a partner with EBM?",
       "ans5": "How can I become a partner with EBM?"
     },
@@ -301,7 +307,7 @@
     },
     "mistingSystemsSection": {
       "header": "Misting Systems",
-      "des": "BM Engineering provides high-efficiency misting systems for cooling, humidification, and dust suppression across industrial, commercial, and outdoor spaces.",
+      "des": "EBM Engineering provides high-efficiency misting systems for cooling, humidification, and dust suppression across industrial, commercial, and outdoor spaces.",
       "secondHeader": "Features & Benefits:",
       "point1": "High-pressure misting for rapid cooling without wet surfaces",
       "point2": "Energy-efficient and environmentally friendly design",

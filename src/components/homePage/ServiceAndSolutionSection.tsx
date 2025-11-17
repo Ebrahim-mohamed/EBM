@@ -23,25 +23,25 @@ import { LinkButton } from "../LinkButton";
 
 const services = [
   {
-    header: "HVAC Solution",
+    header: "hvac",
     des: "We at EBM Engineering take pride in offering a curated selection of HVAC products featuring the industry’s best brands. Our commitment to excellence means you’ll find top-quality heating, ventilation, electrochemical and air conditioning solutions for your every need.",
     to: "hvac",
     img: "hvac",
   },
   {
-    header: "Fire Fighting",
+    header: "fire",
     des: "EBM Engineering: Your trusted specialist for comprehensive Fire Protection and Safety solutions. We provide top-tier products and full-service support to safeguard your building and its occupants.",
     to: "fire-fighting",
     img: "fire",
   },
   {
-    header: "Air population",
+    header: "air",
     des: "As part of our commitment to environmental stewardship and sustainable development, EBM Engineering proudly introduces Air Pollution Control as a core function within our operations in the Kingdom of Saudi Arabia.",
     to: "air-population",
     img: "air",
   },
   {
-    header: "Special Projects",
+    header: "spe",
     des: "EBM Engineering provides high-efficiency misting systems for cooling, humidification, and dust suppression across industrial, commercial, and outdoor spaces.",
     to: "special-projects",
     img: "spe",
