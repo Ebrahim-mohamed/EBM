@@ -36,7 +36,7 @@
       "des": "About EBM",
       "secondHeader": "Founded with a vision to deliver exceptional engineering solutions, EBM has grown into a trusted partner for complex projects across the region. We are built on a foundation of integrity, innovation, and an unwavering commitment to quality.",
       "pra1": "Our mission: To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
-      "pra2": "Our vision: EBM Engineering actively endorses Saudi Arabia's Vision 2030 by aligning its operations with the vision's goals for economic diversification and sustainable development. ",
+      "pra2": "Our vision 2030 : EBM Engineering actively endorses Saudi Arabia's Vision 2030 by aligning its operations with the vision's goals for economic diversification and sustainable development. ",
       "pra3": "sustainability : At EBM Engineering, we believe that our world depends on clean, healthy air and that our solutions must be both energy-efficient and environmentally responsible. ",
       "button": "About Us"
     },
@@ -79,7 +79,7 @@
     },
     "storySection": {
       "header": "Our <second>Story</second>",
-      "des": "<second>EBM’s Interior Architectural Division</second> is led by a team of specialists with more than <second>twenty years of experience</second> in architectural systems across the Middle East and beyond. We deliver systems that <second>protect buildings</second>, enhance interiors, and contribute to long-term performance. From healthcare corridors to transport hubs, we combine international product quality with regional expertise, giving consultants, contractors, and clients solutions they can <second>trust</second>, <second>rely on</second>, and <second>count on for lasting value.</second>"
+      "des": "EBM Engineering Co. was founded in Riyadh over <second>15 years ago</second> to protect lives and create <second>sustainable, comfortable environments</second> across Saudi Arabia. We have grown from <second>fire-protection specialists</second> into a trusted <second>full-service MEP partner</second> for the Kingdom’s largest giga-projects, delivering <second>end-to-end design, installation, and maintenance</second>. Driven by integrity and innovation, we provide advanced <second>HVAC, fire safety, and electromechanical solutions</second> that prioritize safety and energy efficiency. Fully aligned with <second>Saudi Vision 2030</second>, we build a safer, greener future — one sustainable structure at a time."
     },
     "messageSection": {
       "header": "GM’s <second>Message</second>",
@@ -93,14 +93,14 @@
     "whoSection": {
       "header": "<second>Who</second> We Are",
       "des": "EBM: Project done. Perfectly.",
-      "pra": "EBM is a leading Middle East-based company specializing in comprehensive HVAC, Electromechanical, and Fire & Safety Protection services for commercial and industrial projects. EBM Saudi Arabia's core offering includes the full project lifecycle: supply, installation, testing & commissioning, and preventive maintenance. Since its inception, EBM has maintained a strong, long-term reputation by providing cost-effective and practical solutions that uphold high quality standards. This is achieved through an integrated model driven by a multidimensional team of professionals with over 15 years of industry excellence, allowing EBM to efficiently undertake projects of any scale—from conception to handover and subsequent upgrades—while maintaining dedication, integrity, and a commitment to being environmentally and socially responsible."
+      "pra": "EBM Engineering is a specialist in fire protection, Hvac, and electromechanical systems. with over 15 years experience in supply, installation, and maintenance, EBM Engineering has contributed to landmark projects across the Kingdom, including the Harm, the Avenues, and KSP"
     },
     "visionAndMissionSection": {
       "visionHeader": "Vision",
       "missionHeader": "Mission",
       "valueHeader": "Core Values",
       "visionDes": "To be the global leader in building project execution, setting the industry benchmark for streamlined, reliable, and high-quality installations worldwide.",
-      "missionDes": "Delivering comprehensive, end-to-end solutions for the global building industry, we ensure superior efficiency, professional installation, and timely completion everywhere.",
+      "missionDes": "To engineer and deliver superior Fire Protection, HVAC, and Electromechanical solutions that ensure the safety, comfort, and efficiency of the built environment, exceeding client expectations every time.",
       "valueDes": "We guarantee a seamless, professional, and reliable outcome by owning every stage of the project, from initial concept to final maintenance."
     },
     "sustainabilitySection": {
@@ -190,6 +190,75 @@
     }
   },
   "interiorArchitecturePage": {
+    "cover": {
+      "head": "Expansion Joint Cover Systems",
+      "des": "Every building moves. Our expansion joint cover systems absorb that movement while protecting surrounding finishes. They keep floors, walls, and ceilings safe from thermal shifts, seismic loads, and heavy traffic while preserving a seamless look.",
+      "key": "Key Features",
+      "point1": "Profiles for floors, walls, and ceilings",
+      "point2": "Seismic, heavy-duty, and fire-rated options",
+      "point3": "Works with tile, stone, vinyl, and carpet finishes",
+      "point4": "Low sightlines for safe, discreet design",
+      "point5": "Proven reliability in transport, healthcare, and commercial projects"
+    },
+    "wall": {
+      "head": "Wall Protection Systems",
+      "des": "In high-traffic environments, every surface matters. Our wall protection systems defend against daily impact while supporting hygiene and safety standards. From corridors to patient rooms, theycombine strength with easy-to-clean finishes.",
+      "key": "Key Features",
+      "point1": "Impact-resistant for busy areas",
+      "point2": "Hygienic surfaces, easy to clean",
+      "point3": "Sheets, corner guards, crash rails, and handrails",
+      "point4": "Colors and textures to suit design schemes",
+      "point5": "Durability that lowers long-term maintenance costs"
+    },
+    "solar": {
+      "head": "Solar Panel Systems",
+      "des": "Energy is central to modern design. Our solar systems provide reliable performance in harsh climates, cutting operating costs while supporting sustainability goals. They are scalable, adaptable, and built for long-term returns",
+      "key": "Key Features",
+      "point1": "High-efficiency modules for local conditions",
+      "point2": "Scalable for residential, commercial, and public use",
+      "point3": "Low maintenance, long lifespan",
+      "point4": "Cuts energy costs and carbon footprint",
+      "point5": "Integrates with new or existing projects"
+    },
+    "vinylFloor": {
+      "head": "Vinyl Flooring",
+      "des": "Floors carry the weight of a building’s design and daily use. Our vinyl flooring offers durability and safety while creating attractive, comfortable interiors.",
+      "key": "Key Features",
+      "point1": "Slip-resistant and safe underfoot",
+      "point2": "Acoustic comfort to reduce noise",
+      "point3": "Easy to maintain, long wear life",
+      "point4": "Decorative and heavy-duty options",
+      "point5": "Wide range of styles and finishes"
+    },
+    "floor": {
+      "head": "Flooring Accessories",
+      "des": "Small details make a big difference. Our range of flooring accessories adds safety, performance, and design continuity to every project — from high-traffic interiors to refined commercial spaces.",
+      "key": "Key Features",
+      "point1": "Stair Nosing: aluminum and PVC profiles for slip resistance and visual contrast",
+      "point2": "Control Joints: durable profiles that accommodate movement between floor sections",
+      "point3": "Skirting: PVC or aluminum profiles for a clean wall-to-floor transition Compatible with tile, vinyl, stone, and epoxy finishes",
+      "point4": "Available in a variety of finishes and sizes to suit project requirements"
+    },
+    "matt": {
+      "head": "Entrance Matting Systems",
+      "des": "Entrances face the toughest wear. Our matting systems stop dirt and moisture at the door, protecting floors, reducing cleaning, and keeping spaces safe and presentable",
+      "key": "Key Features",
+      "point1": "Handles heavy footfall and wheeled traffic",
+      "point2": "Slip-resistant in wet conditions",
+      "point3": "Cuts long-term cleaning costs",
+      "point4": "Custom sizes and finishes",
+      "point5": "Proven in airports, malls, offices, hospitals"
+    },
+    "window": {
+      "head": "Window Treatment Coverings",
+      "des": "From hospitals to hotels, our window treatment solutions balance functionality with design. We supply both manual and motorised systems, including roller blinds, cubicle curtains, and custom treatments for commercial and healthcare projects. Our fabrics are tested for hygiene, durability, and performance, ensuring solutions that last.",
+      "key": "Key Features",
+      "point1": " Manual and motorised roller blinds",
+      "point2": "Cubicle curtain systems for healthcare applications",
+      "point3": "Wide choice of fabrics and finishes (antimicrobial, blackout, decorative)",
+      "point4": "Designed for privacy, shading, and aesthetic appeal",
+      "point5": "Tested to meet performance and hygiene standards"
+    },
     "heroSection": {
       "header": "Interior Architectural Division — <second>Precision Built</second>, <second>Made to Last.</second>"
     },
@@ -240,16 +309,17 @@
       "jopTitle": "His job Title"
     },
     "faqSection": {
+      "contact": "Contact Us",
       "header": "Frequently Asked <second>Questions</second>",
       "des": "We've answered some of our most common questions to provide you with the information you need.",
       "que1": "Who are EBM’s typical clients?",
-      "ans1": "Major developers and owners of complex commercial, residential, and mixed-use projects. Government and semi-government entities requiring advanced fire protection and electromechanical systems.  Hospitals, banks, universities, and other facilities that depend on specialized HVAC and life-safety solutions.  Industrial sites seeking integrated environmental compliance, air-quality control, and operational-efficiency solutions.",
+      "ans1": "Major developers and owners of complex commercial, residential, and mixed-use projects. | Government and semi-government entities requiring advanced fire protection and electromechanical systems. | Hospitals, banks, universities, and other facilities that depend on specialized HVAC and life-safety solutions. | Industrial sites seeking integrated environmental compliance, air-quality control, and operational-efficiency solutions.",
       "que2": "How does EBM choose its partners?",
-      "ans2": "EBM selects partners based on proven technical expertise and the ability to meet rigorous engineering, safety, and quality benchmarks.Priority is given to vendors and suppliers with reliable delivery performance, strong compliance records, and internationally certified products. Partnerships are formed with companies that demonstrate financial stability, long-term reliability, and capability to support large-scale projects.EBM favors partners whose solutions align with sustainability standards, innovation goals, and Vision 2030 requirements.",
+      "ans2": "EBM selects partners based on proven technical expertise and the ability to meet rigorous engineering, safety, and quality benchmarks. | Priority is given to vendors and suppliers with reliable delivery performance, strong compliance records, and internationally certified products. | Partnerships are formed with companies that demonstrate financial stability, long-term reliability, and capability to support large-scale projects. | EBM favors partners whose solutions align with sustainability standards, innovation goals, and Vision 2030 requirements.",
       "que3": "Can small businesses partner with EBM?",
-      "ans3": "Yes, small businesses can partner with EBM, provided they meet the company’s technical, quality, and compliance requirements. EBM evaluates partners based on capability and reliability, not size, and welcomes SMEs that offer specialized products, innovative solutions, or strong niche expertise.",
+      "ans3": "Yes, small businesses can partner with EBM, provided they meet the company’s technical, quality, and compliance requirements. | EBM evaluates partners based on capability and reliability, not size, and welcomes SMEs that offer specialized products, innovative solutions, or strong niche expertise.",
       "que4": "What industries does EBM support?",
-      "ans4": "EBM supports a wide range of industries that rely on advanced electromechanical, HVAC, and fire-protection solutions, including:Commercial and residential construction (towers, complexes, mixed-use developments).Government and public-sector facilities.Healthcare, banking, and education.Industrial plants, manufacturing sites, and utilities.",
+      "ans4": "EBM supports a wide range of industries that rely on advanced electromechanical, HVAC, and fire-protection solutions, including:Commercial and residential construction (towers, complexes, mixed-use developments). | Government and public-sector facilities.Healthcare, banking, and education.Industrial plants, manufacturing sites, and utilities.",
       "que5": "How can I become a partner with EBM?",
       "ans5": "How can I become a partner with EBM?"
     },

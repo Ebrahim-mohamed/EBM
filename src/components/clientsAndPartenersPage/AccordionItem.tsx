@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
+import { LinkButton } from "../LinkButton";
 
 export function AccordionItemComp({ num }: { num: number }) {
   const t = useTranslations("clientsAndPartnersPage.faqSection");
@@ -18,7 +19,18 @@ export function AccordionItemComp({ num }: { num: number }) {
         {t(`que${num}`)}
       </AccordionTrigger>
       <AccordionContent className="text-[1rem] font-medium">
-        {t(`ans${num}`)}
+        {num !== 5 ? (
+          t(`ans${num}`)
+            .split(" | ")
+            .map((part, index, array) => (
+              <span key={index}>
+                {part}
+                {index < array.length - 1 && <br />}
+              </span>
+            ))
+        ) : (
+          <LinkButton name={t("contact")} to={"contact"} />
+        )}
       </AccordionContent>
     </AccordionItem>
   );

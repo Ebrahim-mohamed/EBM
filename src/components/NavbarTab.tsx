@@ -25,7 +25,7 @@ export function NavbarTab({
     <Link
       onClick={onClose}
       href={name === "home" ? `/${locale}` : `/${locale}/${name}`}
-      className={`text-[1rem] max-[950px]:text-[1.5rem] ${
+      className={`text-[1.1rem] max-[950px]:text-[1.5rem] ${
         (path == `/${locale}` && name === "home") ||
         (path !== `/${locale}` &&
           name !== "home" &&

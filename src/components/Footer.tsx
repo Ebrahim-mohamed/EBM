@@ -30,7 +30,7 @@ export function Footer() {
           src="/logo.png"
           width={50}
           height={50}
-          className="w-[6rem] aspect-square"
+          className="w-[6rem]"
         />
         <p className="text-[1rem] leading-[1.375rem] font-normal">
           {t("mainPra")}

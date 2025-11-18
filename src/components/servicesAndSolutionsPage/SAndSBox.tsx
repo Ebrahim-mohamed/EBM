@@ -7,7 +7,7 @@ export function SAndSBox(sASProps: SAndSBoxType) {
   const locale = useLocale();
   return (
     <div
-      className={`flex items-start justify-between w-full gap-[4rem]  max-[950px]:flex-col ${
+      className={`flex items-center justify-between w-full gap-[4rem]  max-[950px]:flex-col ${
         sASProps.order % 2 === 0 && " flex-row-reverse max-[950px]:flex-col"
       }`}
     >
@@ -15,7 +15,7 @@ export function SAndSBox(sASProps: SAndSBoxType) {
         alt="service image"
         width={300}
         height={300}
-        src={`/ServicesAndSolutionsPage/service${sASProps.order}.png`}
+        src={`/ServicesAndSolutionsPage/service${sASProps.order}.jpg`}
         className="w-[50%] rounded-[0.5rem] max-[950px]:w-full"
       />
       <div className="flex flex-col gap-[2rem] flex-1 items-start">
