@@ -17,7 +17,6 @@ const navs = [
   "service-solution",
   "clients-partners",
   "interior-architectural",
-  "privacy",
   "terms",
 ];
 export function Footer() {
