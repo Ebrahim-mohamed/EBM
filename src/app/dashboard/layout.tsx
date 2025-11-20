@@ -7,9 +7,8 @@ type Props = {
 export default async function DashboardLayout({ children }: Props) {
   return (
     <html>
-      <body className="flex gap-[2rem]">
+      <body className="flex ">
         <DashboardNavbar />
-
         {children}
       </body>
     </html>

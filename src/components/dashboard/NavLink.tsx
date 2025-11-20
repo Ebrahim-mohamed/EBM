@@ -8,9 +8,11 @@ export function NavLink({ name, to }: { name: string; to: string }) {
   return (
     <Link
       href={`/dashboard/${to}`}
-      className={`text-black ${
-        path.includes(to) ? " font-bold " : " font-normal "
-      } text-[1.5rem]  `}
+      className={` ${
+        path.includes(to)
+          ? " text-[#111827] font-bold bg-[#A8CF38] p-[0.5rem]  "
+          : " text-white "
+      } text-[1.5rem]  px-[1rem]  w-full`}
     >
       {name}
     </Link>

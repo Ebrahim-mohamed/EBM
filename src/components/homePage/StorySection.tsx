@@ -33,8 +33,8 @@ export function StorySection() {
           alt="story image"
           width={300}
           height={300}
-          src="/homePage/story.png"
-          className="w-[70%] aspect-[512/653] rounded-[1.5rem] max-[1300px]:w-[100%] max-[1100px]:w-[130%]"
+          src="/homePage/story.jpg"
+          className="w-[70%]  rounded-[1.5rem] max-[1300px]:w-[100%] max-[1100px]:w-[130%]"
         />
       </div>
     </div>

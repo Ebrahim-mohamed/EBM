@@ -29,45 +29,56 @@ type Project = {
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [editingProject, setEditingProject] = useState<Project | null>(null);
+  const [open, setOpen] = useState(false); // Controls dialog opening
 
+  // Fetch projects
   const fetchProjects = async () => {
-    const res = await fetch("https://api.ebmksa.com/projects");
-    const data = await res.json();
-    setProjects(data);
+    try {
+      const res = await fetch("https://api.ebmksa.com/projects");
+      const data = await res.json();
+      setProjects(data);
+    } catch (error) {
+      console.error("Error fetching projects:", error);
+    }
   };
 
   useEffect(() => {
     fetchProjects();
   }, []);
 
+  // Add or Edit project
   const handleAddOrEdit = async (formData: FormData) => {
-    if (editingProject) {
-      // Editing existing project
-      const res = await fetch(
-        `https://api.ebmksa.com/projects/${editingProject._id}`,
-        {
+    try {
+      if (editingProject) {
+        await fetch(`https://api.ebmksa.com/projects/${editingProject._id}`, {
           method: "PUT",
           body: formData,
-        }
-      );
-      await res.json();
+        });
+      } else {
+        await fetch("https://api.ebmksa.com/projects", {
+          method: "POST",
+          body: formData,
+        });
+      }
+
       setEditingProject(null);
-    } else {
-      // Adding new project
-      const res = await fetch("https://api.ebmksa.com/projects", {
-        method: "POST",
-        body: formData,
-      });
-      await res.json();
+      setOpen(false);
+      fetchProjects();
+    } catch (error) {
+      console.error("Error saving project:", error);
     }
-    fetchProjects();
   };
+
+  // Delete project
   const onDelete = async (id: string) => {
-    const res = await fetch(`https://api.ebmksa.com/projects/${id}`, {
-      method: "DELETE",
-    });
-    await res.json();
-    fetchProjects();
+    try {
+      await fetch(`https://api.ebmksa.com/projects/${id}`, {
+        method: "DELETE",
+      });
+      fetchProjects();
+    } catch (error) {
+      console.error("Error deleting project:", error);
+    }
   };
 
   return (
@@ -78,12 +89,15 @@ export default function Projects() {
           Projects Management
         </h1>
 
-        <Dialog
-          open={!!editingProject}
-          onOpenChange={() => setEditingProject(null)}
-        >
+        <Dialog open={open} onOpenChange={setOpen}>
           <DialogTrigger asChild>
-            <button className="px-5 py-2.5 bg-green-600 text-white font-medium text-base rounded-xl shadow-sm hover:bg-green-700 transition">
+            <button
+              onClick={() => {
+                setEditingProject(null);
+                setOpen(true);
+              }}
+              className="px-5 py-2.5 bg-green-600 text-white font-medium text-base rounded-xl shadow-sm hover:bg-green-700 transition"
+            >
               + Add Project
             </button>
           </DialogTrigger>
@@ -96,9 +110,7 @@ export default function Projects() {
             </DialogHeader>
 
             <div className="mt-4">
-              {/* Use your existing ProjectForm */}
               <ProjectForm
-                // prefill only if editing
                 defaultValues={
                   editingProject
                     ? {
@@ -106,7 +118,6 @@ export default function Projects() {
                         nameAR: editingProject.title.ar,
                         desEN: editingProject.description.en,
                         desAR: editingProject.description.ar,
-                        // projectImage cannot prefill a File input, leave blank
                         projectImage: undefined,
                       }
                     : undefined
@@ -147,21 +158,28 @@ export default function Projects() {
                         Browse Image
                       </Link>
                     </TableCell>
+
                     <TableCell>{project.title.en}</TableCell>
                     <TableCell dir="rtl">{project.title.ar}</TableCell>
+
                     <TableCell>{project.description.en}</TableCell>
                     <TableCell dir="rtl">{project.description.ar}</TableCell>
+
                     <TableCell>
                       <button
-                        className="cursor-pointer px-3 py-1.5 bg-blue-600 text-white rounded-lg text-[1rem] hover:bg-blue-700 transition"
-                        onClick={() => setEditingProject(project)}
+                        className="cursor-pointer px-3 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                        onClick={() => {
+                          setEditingProject(project);
+                          setOpen(true);
+                        }}
                       >
                         Edit
                       </button>
                     </TableCell>
+
                     <TableCell>
                       <button
-                        className="  cursor-pointer px-3 py-1.5 bg-red-600 text-white rounded-lg text-[1rem] hover:bg-red-700 transition"
+                        className="cursor-pointer px-3 py-1.5 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
                         onClick={() => onDelete(project._id)}
                       >
                         Delete
@@ -172,7 +190,7 @@ export default function Projects() {
               ) : (
                 <TableRow>
                   <TableCell
-                    colSpan={6}
+                    colSpan={7}
                     className="text-center py-10 text-gray-500"
                   >
                     No projects yet

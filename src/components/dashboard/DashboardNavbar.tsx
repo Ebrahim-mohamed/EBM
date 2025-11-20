@@ -3,14 +3,14 @@ import { NavLink } from "./NavLink";
 
 export function DashboardNavbar() {
   return (
-    <div className="flex flex-col gap-[1.5rem] p-[2rem] border-r-[2px] border-r-black h-dvh min-w-[14rem]">
-      <div className="bg-black">
+    <div className="flex flex-col gap-[1.5rem] py-[2rem] border-r-[2px]  h-dvh min-w-[14rem] bg-[#111827]">
+      <div className="w-[12rem] p-[2rem]">
         <Image
           alt="logo image"
           src="/logo.png"
           width={500}
           height={500}
-          className="w-[6rem]"
+          className="w-full"
         />
       </div>
       <NavLink name="Projects" to="projects" />
