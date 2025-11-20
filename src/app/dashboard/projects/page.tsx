@@ -31,7 +31,7 @@ export default function Projects() {
   const [editingProject, setEditingProject] = useState<Project | null>(null);
 
   const fetchProjects = async () => {
-    const res = await fetch("http://72.61.187.71:3001/projects");
+    const res = await fetch("https://api.ebmksa.com/projects");
     const data = await res.json();
     setProjects(data);
   };
@@ -44,7 +44,7 @@ export default function Projects() {
     if (editingProject) {
       // Editing existing project
       const res = await fetch(
-        `http://72.61.187.71:3001/projects/${editingProject._id}`,
+        `https://api.ebmksa.com/projects/${editingProject._id}`,
         {
           method: "PUT",
           body: formData,
@@ -54,7 +54,7 @@ export default function Projects() {
       setEditingProject(null);
     } else {
       // Adding new project
-      const res = await fetch("http://72.61.187.71:3001/projects", {
+      const res = await fetch("https://api.ebmksa.com/projects", {
         method: "POST",
         body: formData,
       });
@@ -63,7 +63,7 @@ export default function Projects() {
     fetchProjects();
   };
   const onDelete = async (id: string) => {
-    const res = await fetch(`http://72.61.187.71:3001/projects/${id}`, {
+    const res = await fetch(`https://api.ebmksa.com/projects/${id}`, {
       method: "DELETE",
     });
     await res.json();
@@ -140,7 +140,7 @@ export default function Projects() {
                   <TableRow key={project._id}>
                     <TableCell>
                       <Link
-                        href={`http://72.61.187.71:3001/uploads/${project.image}`}
+                        href={`https://api.ebmksa.com/uploads/${project.image}`}
                         target="_blank"
                         className="underline text-green-600 font-semibold"
                       >
