@@ -37,7 +37,7 @@ export function ProjectsSection() {
   const locale = useLocale();
   const [contactData, setContactData] = useState<ProjectType[]>();
   useEffect(() => {
-    fetch("http://localhost:3001/projects")
+    fetch("http://72.61.187.71:3001/projects")
       .then((data) => data.json())
       .then((finalData) => setContactData(finalData));
   }, []);

@@ -36,7 +36,7 @@ export default function ContactInfo() {
   const fetchContactInfo = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3001/contact-info");
+      const res = await fetch("http://72.61.187.71:3001/contact-info");
       const data: ContactInfoType = await res.json();
       setContactInfo(data);
     } catch (err) {
@@ -48,7 +48,7 @@ export default function ContactInfo() {
 
   const handleSave = async (updated: ContactInfoType) => {
     try {
-      const res = await fetch("http://localhost:3001/contact-info", {
+      const res = await fetch("http://72.61.187.71:3001/contact-info", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updated),

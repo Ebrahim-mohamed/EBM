@@ -44,7 +44,7 @@ export function ProjectForm({ defaultValues, onSubmit }: ProjectFormProps) {
       onSubmit(formData);
     } else {
       // default behavior: add project
-      fetch("http://localhost:3001/projects", {
+      fetch("http://72.61.187.71:3001/projects", {
         method: "POST",
         body: formData,
       })
