@@ -12,12 +12,12 @@ type ContactInfoType = {
   phone: { en: string; ar: string };
   email: string;
 };
-export function ContactInformationSection() {
+export function InterContactInformationSection() {
   const t = useTranslations("contactPage.contactInfo");
   const locale = useLocale();
   const [contactData, setContactData] = useState<ContactInfoType>();
   useEffect(() => {
-    fetch("http://localhost:3001/contact-info")
+    fetch("http://localhost:3001/inter-contact-info")
       .then((data) => data.json())
       .then((finalData) => setContactData(finalData));
   }, []);

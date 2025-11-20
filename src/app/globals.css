@@ -2,6 +2,17 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+table {
+  table-layout: fixed; /* prevents cells from auto expanding */
+  width: 100%;
+}
+
+td {
+  word-wrap: break-word;
+  white-space: normal; /* allow wrapping */
+  overflow-wrap: break-word;
+}
+
 @media (max-width: 1000px) {
   html {
     font-size: 90%;

@@ -1,5 +1,6 @@
 export type projectBoxType = {
   order: number;
-  header: string;
-  des: string;
+  image: string | undefined;
+  header: string | undefined;
+  des: string | undefined;
 };

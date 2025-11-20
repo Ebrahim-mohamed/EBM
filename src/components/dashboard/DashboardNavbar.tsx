@@ -15,6 +15,7 @@ export function DashboardNavbar() {
       </div>
       <NavLink name="Projects" to="projects" />
       <NavLink name="contact Info" to="contacts" />
+      <NavLink name="inter contact Info" to="inter-contact" />
     </div>
   );
 }

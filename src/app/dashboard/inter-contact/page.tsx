@@ -19,14 +19,15 @@ import {
 
 type Localized = { en: string; ar: string };
 
-type ContactInfoType = {
+type interContactInfoType = {
   address: Localized;
   phone: Localized;
   email: string;
 };
 
-export default function ContactInfo() {
-  const [contactInfo, setContactInfo] = useState<ContactInfoType | null>(null);
+export default function InterContactInfo() {
+  const [interContactInfo, setInterContactInfo] =
+    useState<interContactInfoType | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -36,9 +37,9 @@ export default function ContactInfo() {
   const fetchContactInfo = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3001/contact-info");
-      const data: ContactInfoType = await res.json();
-      setContactInfo(data);
+      const res = await fetch("http://localhost:3001/inter-contact-info");
+      const data: interContactInfoType = await res.json();
+      setInterContactInfo(data);
     } catch (err) {
       console.error(err);
     } finally {
@@ -46,15 +47,15 @@ export default function ContactInfo() {
     }
   };
 
-  const handleSave = async (updated: ContactInfoType) => {
+  const handleSave = async (updated: interContactInfoType) => {
     try {
-      const res = await fetch("http://localhost:3001/contact-info", {
+      const res = await fetch("http://localhost:3001/inter-contact-info", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updated),
       });
       if (!res.ok) throw new Error("Failed to update");
-      setContactInfo(updated);
+      setInterContactInfo(updated);
       alert("Contact info updated successfully");
     } catch (err) {
       console.error(err);
@@ -65,7 +66,7 @@ export default function ContactInfo() {
   if (loading)
     return <div className="p-8 text-center text-gray-600">Loading...</div>;
 
-  if (!contactInfo)
+  if (!interContactInfo)
     return (
       <div className="p-8 text-center text-gray-600">No contact info found</div>
     );
@@ -93,30 +94,30 @@ export default function ContactInfo() {
             <TableBody>
               <TableRow className="hover:bg-gray-50 transition-colors">
                 <TableCell className="p-4 max-w-[25rem] break-words">
-                  {contactInfo.address.en}
+                  {interContactInfo.address.en}
                 </TableCell>
                 <TableCell className="p-4 max-w-[25rem] break-words text-right">
-                  {contactInfo.address.ar}
+                  {interContactInfo.address.ar}
                 </TableCell>
                 <TableCell className="text-center">Address</TableCell>
               </TableRow>
 
               <TableRow className="hover:bg-gray-50 transition-colors">
                 <TableCell className="p-4 max-w-[25rem] break-words">
-                  {contactInfo.phone.en}
+                  {interContactInfo.phone.en}
                 </TableCell>
                 <TableCell className="p-4 max-w-[25rem] break-words text-right">
-                  {contactInfo.phone.ar}
+                  {interContactInfo.phone.ar}
                 </TableCell>
                 <TableCell className="text-center">Phone</TableCell>
               </TableRow>
 
               <TableRow className="hover:bg-gray-50 transition-colors">
                 <TableCell className="p-4 break-words">
-                  {contactInfo.email}
+                  {interContactInfo.email}
                 </TableCell>
                 <TableCell className="p-4 break-words text-right">
-                  {contactInfo.email}
+                  {interContactInfo.email}
                 </TableCell>
                 <TableCell className="text-center">Email</TableCell>
               </TableRow>
@@ -126,7 +127,7 @@ export default function ContactInfo() {
 
         {/* Modify Button */}
         <div className="p-4 flex justify-end">
-          <ModifyDialog contactInfo={contactInfo} onSave={handleSave} />
+          <ModifyDialog contactInfo={interContactInfo} onSave={handleSave} />
         </div>
       </div>
     </div>
@@ -140,8 +141,8 @@ function ModifyDialog({
   contactInfo,
   onSave,
 }: {
-  contactInfo: ContactInfoType;
-  onSave: (updated: ContactInfoType) => void;
+  contactInfo: interContactInfoType;
+  onSave: (updated: interContactInfoType) => void;
 }) {
   const [open, setOpen] = useState(false);
   const [addressEn, setAddressEn] = useState(contactInfo.address.en);

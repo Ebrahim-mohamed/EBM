@@ -1,5 +1,6 @@
 import { EndSection } from "@/components/endSection";
 import { Hero } from "@/components/Hero";
+import { InterContactInformationSection } from "@/components/interiorArchitecturePage/ContactInformationSection";
 import { CoreSection } from "@/components/interiorArchitecturePage/CoreSection";
 import { DivisionSection } from "@/components/interiorArchitecturePage/DivisionSection";
 import { SectorsSection } from "@/components/interiorArchitecturePage/SectorsSection";
@@ -21,6 +22,7 @@ export default function InteriorArchitectural() {
       <DivisionSection />
       <CoreSection />
       <SectorsSection />
+      <InterContactInformationSection />
       <WhySection />
       <EndSection
         button={endT("button")}
