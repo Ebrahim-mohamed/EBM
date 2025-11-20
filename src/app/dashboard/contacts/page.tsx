@@ -72,7 +72,7 @@ export default function ContactInfo() {
 
   return (
     <div className="w-full flex flex-col p-6">
-      <div className="w-full max-w-[1200px] border rounded-2xl shadow-md bg-white overflow-hidden">
+      <div className="w-full  border rounded-2xl shadow-md bg-white overflow-hidden">
         {/* Table */}
         <div className="overflow-x-auto">
           <Table className="w-full text-[1.1rem] table-auto border-collapse">

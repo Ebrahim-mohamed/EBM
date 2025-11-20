@@ -3,7 +3,7 @@ import { NavLink } from "./NavLink";
 
 export function DashboardNavbar() {
   return (
-    <div className="flex flex-col gap-[1.5rem] py-[2rem] border-r-[2px]  h-dvh min-w-[14rem] bg-[#111827]">
+    <div className="flex flex-col gap-[1.5rem] py-[2rem]   h-dvh min-w-[16rem] bg-[#111827]">
       <div className="w-[12rem] p-[2rem]">
         <Image
           alt="logo image"
@@ -14,8 +14,8 @@ export function DashboardNavbar() {
         />
       </div>
       <NavLink name="Projects" to="projects" />
-      <NavLink name="contact Info" to="contacts" />
-      <NavLink name="inter contact Info" to="inter-contact" />
+      <NavLink name="Contact info" to="contacts" />
+      <NavLink name="Inter contact Info" to="inter-contact" />
     </div>
   );
 }

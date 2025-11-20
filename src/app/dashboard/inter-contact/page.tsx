@@ -37,7 +37,7 @@ export default function InterContactInfo() {
   const fetchContactInfo = async () => {
     setLoading(true);
     try {
-      const res = await fetch("https://api.ebmksa.com/inter-contact-info");
+      const res = await fetch("https://api.ebmksa.com/interContact-info");
       const data: interContactInfoType = await res.json();
       setInterContactInfo(data);
     } catch (err) {
@@ -49,7 +49,7 @@ export default function InterContactInfo() {
 
   const handleSave = async (updated: interContactInfoType) => {
     try {
-      const res = await fetch("https://api.ebmksa.com/inter-contact-info", {
+      const res = await fetch("https://api.ebmksa.com/interContact-info", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updated),
@@ -73,7 +73,7 @@ export default function InterContactInfo() {
 
   return (
     <div className="w-full flex flex-col p-6">
-      <div className="w-full max-w-[1200px] border rounded-2xl shadow-md bg-white overflow-hidden">
+      <div className="w-full  border rounded-2xl shadow-md bg-white overflow-hidden">
         {/* Table */}
         <div className="overflow-x-auto">
           <Table className="w-full text-[1.1rem] table-auto border-collapse">
