@@ -182,6 +182,7 @@
       "des": "From concept to completion, our projects highlight the trust we’ve built and the results we’ve delivered."
     },
     "projectsSection": {
+      "no-projects": "There is no projects yet",
       "header": "our <second>projects</second>"
     },
     "endSection": {
@@ -591,6 +592,7 @@
       "button": "Submit"
     },
     "contactInfo": {
+      "contact": "Contact Us",
       "header": "Our Headquarters",
       "emailHeader": "Email",
       "phoneHeader": "Phone Number",

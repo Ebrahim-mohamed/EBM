@@ -9,15 +9,17 @@ export function ProjectBox(projectProps: projectBoxType) {
         projectProps.order % 2 === 0 && " flex-row-reverse max-[950px]:flex-col"
       }`}
     >
-      <img
-        src={
-          projectProps.image
-            ? `https://api.ebmksa.com/uploads/${projectProps.image}`
-            : "/fallback.png"
-        }
-        alt="service image"
-        className="w-[40%] rounded-[0.5rem] max-[950px]:w-full"
-      />
+      <div className="flex-1">
+        <img
+          src={
+            projectProps.image
+              ? `http://localhost:3001/uploads/${projectProps.image}`
+              : "/fallback.png"
+          }
+          alt="service image"
+          className="w-full rounded-[0.5rem]"
+        />
+      </div>
 
       <div className="flex flex-col gap-[2rem] flex-1 items-start">
         <h1

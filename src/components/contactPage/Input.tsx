@@ -28,7 +28,7 @@ export function Input({
         />
       )}
       {errorMessage && (
-        <p className="absolute bottom-[-1.5rem] left-0  text-red-800 font-medium text-[0.8rem]">
+        <p className="absolute bottom-[-1.5rem] left-0  text-red-300 font-medium text-[0.9rem]">
           {errorMessage}
         </p>
       )}

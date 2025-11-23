@@ -37,7 +37,7 @@ export function ProjectsSection() {
   const locale = useLocale();
   const [contactData, setContactData] = useState<ProjectType[]>();
   useEffect(() => {
-    fetch("https://api.ebmksa.com/projects")
+    fetch("http://localhost:3001/projects")
       .then((data) => data.json())
       .then((finalData) => setContactData(finalData));
   }, []);
@@ -54,7 +54,7 @@ export function ProjectsSection() {
         <div className="text-center text-white">Loading...</div>
       ) : contactData === null || contactData.length === 0 ? (
         <p className="text-center font-bold text-[1.2rem] m-[1.5rem] text-[#A8CF38]">
-          there is no projects yet
+          {t("no-projects")}
         </p>
       ) : (
         <div className="flex flex-col gap-[4rem]">
