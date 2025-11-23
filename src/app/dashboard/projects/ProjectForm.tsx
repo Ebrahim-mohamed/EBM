@@ -1,7 +1,12 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { ProjectInput } from "./ProjectsInput";
-import { projectFormType, projectSchema } from "@/schema/projectSchema";
+import {
+  projectFormType,
+  projectSchema,
+  projectEditFormType,
+  projectEditSchema,
+} from "@/schema/projectSchema";
 
 const inputs = [
   { name: "Project name in english", nameInSchema: "nameEN" },
@@ -12,15 +17,17 @@ const inputs = [
 ] as const;
 
 type ProjectFormProps = {
-  defaultValues?: Partial<projectFormType>;
+  defaultValues?: Partial<projectFormType | projectEditFormType>;
   onSubmit?: (formData: FormData) => void | Promise<void>;
   isSubmitting?: boolean;
+  isEditing?: boolean; // Add this prop
 };
 
 export function ProjectForm({
   defaultValues,
   onSubmit,
   isSubmitting = false,
+  isEditing = false, // Add this prop
 }: ProjectFormProps) {
   const {
     register,
@@ -28,21 +35,21 @@ export function ProjectForm({
     formState: { errors },
     watch,
     reset,
-  } = useForm<projectFormType>({
-    resolver: zodResolver(projectSchema),
+  } = useForm<projectFormType | projectEditFormType>({
+    resolver: zodResolver(isEditing ? projectEditSchema : projectSchema),
     defaultValues,
   });
 
   const watchImage = watch("projectImage");
 
-  async function internalSubmit(data: projectFormType) {
+  async function internalSubmit(data: projectFormType | projectEditFormType) {
     const formData = new FormData();
     formData.append("nameEN", data.nameEN);
     formData.append("nameAR", data.nameAR);
     formData.append("desEN", data.desEN);
     formData.append("desAR", data.desAR);
 
-    // Handle FileList properly
+    // Handle FileList properly - only append if file is selected
     if (
       data.projectImage &&
       data.projectImage instanceof FileList &&
@@ -53,7 +60,7 @@ export function ProjectForm({
 
     if (onSubmit) {
       await onSubmit(formData);
-      reset(); // Reset form after successful submission
+      reset();
     } else {
       // default behavior: add project
       try {
@@ -85,7 +92,10 @@ export function ProjectForm({
       {inputs.map((input) => (
         <ProjectInput
           key={input.name}
-          label={input.name}
+          label={
+            input.name +
+            (input.name === "Project image" && isEditing ? " (optional)" : "")
+          }
           place={input.name}
           type={input.name === "Project image" ? "file" : "text"}
           errorMessage={errors[input.nameInSchema]?.message}

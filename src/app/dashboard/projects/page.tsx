@@ -38,7 +38,7 @@ export default function Projects() {
     setIsLoading(true);
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
 
       const res = await fetch("https://api.ebmksa.com/projects", {
         method: "GET",
@@ -88,9 +88,8 @@ export default function Projects() {
 
       console.log(`Submitting ${method} request to:`, url);
 
-      // Create abort controller with longer timeout for file uploads
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 seconds for file upload
+      const timeoutId = setTimeout(() => controller.abort(), 30000);
 
       let response: Response | undefined;
       let responseReceived = false;
@@ -110,11 +109,9 @@ export default function Projects() {
           console.log(
             "Request timed out, but checking if project was saved..."
           );
-          // Wait a moment then refresh to see if it was actually saved
           await new Promise((resolve) => setTimeout(resolve, 2000));
           await fetchProjects();
 
-          // Check if the operation succeeded by looking at the projects list
           alert(
             "Request timed out, but the project may have been saved. Please check the table below."
           );
@@ -135,8 +132,6 @@ export default function Projects() {
       } catch (jsonError) {
         console.error("Failed to parse JSON response:", jsonError);
 
-        // If we get here, the request completed but response parsing failed
-        // Let's check if the operation actually succeeded
         if (response.ok || response.status === 201) {
           console.log("Status was OK, refreshing projects list...");
           await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -164,23 +159,19 @@ export default function Projects() {
 
       console.log("Success:", result);
 
-      // Show success message
       alert(
         editingProject
           ? "Project updated successfully!"
           : "Project added successfully!"
       );
 
-      // Close dialog and reset state
       setEditingProject(null);
       setOpen(false);
 
-      // Refresh the projects list
       await fetchProjects();
     } catch (error) {
       console.error("Error saving project:", error);
 
-      // Even on error, try to refresh the list in case it actually saved
       console.log("Refreshing projects list to verify...");
       await new Promise((resolve) => setTimeout(resolve, 1500));
       await fetchProjects();
@@ -232,7 +223,6 @@ export default function Projects() {
         alert("Failed to delete project. Please try again.");
       }
 
-      // Refresh anyway to verify
       await fetchProjects();
     }
   };
@@ -248,7 +238,7 @@ export default function Projects() {
   return (
     <div className="w-full min-h-screen bg-gray-50 p-6 flex flex-col gap-6">
       {/* Header + Add Project */}
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center gap-6 w-full">
         <h1 className="text-2xl font-semibold text-gray-800">
           Projects Management
         </h1>
@@ -260,7 +250,7 @@ export default function Projects() {
                 setEditingProject(null);
                 setOpen(true);
               }}
-              className="px-5 py-2.5 bg-green-600 text-white font-medium text-base rounded-xl shadow-sm hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+              className="px-5 py-2.5 bg-green-600 text-white font-medium text-base rounded-xl shadow-sm hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
               disabled={isSubmitting}
             >
               + Add Project
@@ -289,6 +279,7 @@ export default function Projects() {
                 }
                 onSubmit={handleAddOrEdit}
                 isSubmitting={isSubmitting}
+                isEditing={!!editingProject}
               />
             </div>
           </DialogContent>
@@ -304,53 +295,110 @@ export default function Projects() {
 
       {/* Table */}
       {!isLoading && (
-        <div className="w-full border rounded-2xl shadow-sm bg-white overflow-hidden">
-          <div className="max-h-[80vh] overflow-y-auto">
-            <Table className="w-full text-[1rem] border-collapse">
-              <TableHeader className="sticky top-0 bg-gray-100 z-10">
-                <TableRow>
-                  <TableHead>Image</TableHead>
-                  <TableHead>Name (EN)</TableHead>
-                  <TableHead>Name (AR)</TableHead>
-                  <TableHead>Description (EN)</TableHead>
-                  <TableHead>Description (AR)</TableHead>
-                  <TableHead>Edit</TableHead>
-                  <TableHead>Delete</TableHead>
+        <div className="w-full border rounded-2xl shadow-lg bg-white overflow-hidden">
+          <div className="max-h-[calc(100vh-12rem)] overflow-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 hover:scrollbar-thumb-gray-500">
+            <Table className="text-[1rem] border-collapse w-full">
+              <TableHeader className="sticky top-0 bg-gradient-to-r from-gray-50 to-gray-100 z-20 shadow-sm">
+                <TableRow className="border-b-2 border-gray-200">
+                  <TableHead className="whitespace-nowrap px-6 py-4 font-semibold text-gray-700 min-w-[150px]">
+                    Image
+                  </TableHead>
+                  <TableHead className="whitespace-nowrap px-6 py-4 font-semibold text-gray-700 min-w-[250px]">
+                    Name (EN)
+                  </TableHead>
+                  <TableHead className="whitespace-nowrap px-6 py-4 font-semibold text-gray-700 min-w-[250px]">
+                    Name (AR)
+                  </TableHead>
+                  <TableHead className="whitespace-nowrap px-6 py-4 font-semibold text-gray-700 min-w-[400px]">
+                    Description (EN)
+                  </TableHead>
+                  <TableHead className="whitespace-nowrap px-6 py-4 font-semibold text-gray-700 min-w-[400px]">
+                    Description (AR)
+                  </TableHead>
+                  <TableHead className="whitespace-nowrap px-6 py-4 font-semibold text-gray-700 min-w-[100px] text-center">
+                    Edit
+                  </TableHead>
+                  <TableHead className="whitespace-nowrap px-6 py-4 font-semibold text-gray-700 min-w-[100px] text-center">
+                    Delete
+                  </TableHead>
                 </TableRow>
               </TableHeader>
 
               <TableBody>
                 {projects.length > 0 ? (
-                  projects.map((project) => (
-                    <TableRow key={project._id}>
-                      <TableCell>
+                  projects.map((project, index) => (
+                    <TableRow
+                      key={project._id}
+                      className={`
+                        border-b border-gray-100 
+                        hover:bg-blue-50 
+                        transition-colors duration-150
+                        ${index % 2 === 0 ? "bg-white" : "bg-gray-50/50"}
+                      `}
+                    >
+                      <TableCell className="whitespace-nowrap px-6 py-4">
                         <Link
                           href={`https://api.ebmksa.com/uploads/${project.image}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="underline text-green-600 font-semibold hover:text-green-700"
+                          className="inline-flex items-center gap-2 text-green-600 font-semibold hover:text-green-700 hover:underline transition-colors"
                         >
-                          Browse Image
+                          <svg
+                            className="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                            />
+                          </svg>
+                          View Image
                         </Link>
                       </TableCell>
 
-                      <TableCell className="max-w-xs truncate">
-                        {project.title.en}
-                      </TableCell>
-                      <TableCell dir="rtl" className="max-w-xs truncate">
-                        {project.title.ar}
-                      </TableCell>
-
-                      <TableCell className="max-w-xs truncate">
-                        {project.description.en}
-                      </TableCell>
-                      <TableCell dir="rtl" className="max-w-xs truncate">
-                        {project.description.ar}
+                      <TableCell className="px-6 py-4">
+                        <div
+                          className="max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap"
+                          title={project.title.en}
+                        >
+                          {project.title.en}
+                        </div>
                       </TableCell>
 
-                      <TableCell>
+                      <TableCell dir="rtl" className="px-6 py-4">
+                        <div
+                          className="max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap"
+                          title={project.title.ar}
+                        >
+                          {project.title.ar}
+                        </div>
+                      </TableCell>
+
+                      <TableCell className="px-6 py-4">
+                        <div
+                          className="max-w-[500px] overflow-hidden text-ellipsis whitespace-nowrap text-gray-600"
+                          title={project.description.en}
+                        >
+                          {project.description.en}
+                        </div>
+                      </TableCell>
+
+                      <TableCell dir="rtl" className="px-6 py-4">
+                        <div
+                          className="max-w-[500px] overflow-hidden text-ellipsis whitespace-nowrap text-gray-600"
+                          title={project.description.ar}
+                        >
+                          {project.description.ar}
+                        </div>
+                      </TableCell>
+
+                      <TableCell className="whitespace-nowrap px-6 py-4 text-center">
                         <button
-                          className="cursor-pointer px-3 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 hover:shadow-md active:scale-95 transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-none"
                           onClick={() => {
                             setEditingProject(project);
                             setOpen(true);
@@ -361,9 +409,9 @@ export default function Projects() {
                         </button>
                       </TableCell>
 
-                      <TableCell>
+                      <TableCell className="whitespace-nowrap px-6 py-4 text-center">
                         <button
-                          className="cursor-pointer px-3 py-1.5 bg-red-600 text-white rounded-lg hover:bg-red-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-lg hover:bg-red-700 hover:shadow-md active:scale-95 transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:shadow-none"
                           onClick={() => onDelete(project._id)}
                           disabled={isSubmitting}
                         >
@@ -376,9 +424,27 @@ export default function Projects() {
                   <TableRow>
                     <TableCell
                       colSpan={7}
-                      className="text-center py-10 text-gray-500"
+                      className="text-center py-16 text-gray-500"
                     >
-                      No projects yet. Click Add Project to get started!
+                      <div className="flex flex-col items-center gap-3">
+                        <svg
+                          className="w-16 h-16 text-gray-300"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={1.5}
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          />
+                        </svg>
+                        <p className="text-lg font-medium">No projects yet</p>
+                        <p className="text-sm text-gray-400">
+                          Click Add Project to get started!
+                        </p>
+                      </div>
                     </TableCell>
                   </TableRow>
                 )}
