@@ -37,7 +37,7 @@ export default function InterContactInfo() {
   const fetchContactInfo = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:3001/interContact-info");
+      const res = await fetch("https://api.ebmksa.com/interContact-info");
       const data: interContactInfoType = await res.json();
       setInterContactInfo(data);
     } catch (err) {
@@ -49,7 +49,7 @@ export default function InterContactInfo() {
 
   const handleSave = async (updated: interContactInfoType) => {
     try {
-      const res = await fetch("http://localhost:3001/interContact-info", {
+      const res = await fetch("https://api.ebmksa.com/interContact-info", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updated),

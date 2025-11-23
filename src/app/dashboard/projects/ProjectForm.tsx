@@ -57,7 +57,7 @@ export function ProjectForm({
     } else {
       // default behavior: add project
       try {
-        const response = await fetch("http://localhost:3001/projects", {
+        const response = await fetch("https://api.ebmksa.com/projects", {
           method: "POST",
           body: formData,
         });

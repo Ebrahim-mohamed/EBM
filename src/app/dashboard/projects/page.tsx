@@ -40,7 +40,7 @@ export default function Projects() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
 
-      const res = await fetch("http://localhost:3001/projects", {
+      const res = await fetch("https://api.ebmksa.com/projects", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -81,8 +81,8 @@ export default function Projects() {
 
     try {
       const url = editingProject
-        ? `http://localhost:3001/projects/${editingProject._id}`
-        : "http://localhost:3001/projects";
+        ? `https://api.ebmksa.com/projects/${editingProject._id}`
+        : "https://api.ebmksa.com/projects";
 
       const method = editingProject ? "PUT" : "POST";
 
@@ -205,7 +205,7 @@ export default function Projects() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 10000);
 
-      const response = await fetch(`http://localhost:3001/projects/${id}`, {
+      const response = await fetch(`https://api.ebmksa.com/projects/${id}`, {
         method: "DELETE",
         headers: {
           Accept: "application/json",
@@ -325,7 +325,7 @@ export default function Projects() {
                     <TableRow key={project._id}>
                       <TableCell>
                         <Link
-                          href={`http://localhost:3001/uploads/${project.image}`}
+                          href={`https://api.ebmksa.com/uploads/${project.image}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="underline text-green-600 font-semibold hover:text-green-700"

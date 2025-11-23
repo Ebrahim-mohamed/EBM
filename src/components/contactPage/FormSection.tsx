@@ -24,7 +24,7 @@ export function FormSection({ isInter }: { isInter?: boolean }) {
     setIsSubmitting(true); // disable button
     try {
       const res = await fetch(
-        `http://localhost:3001/${isInter ? "contact-for-inter" : "contact"}`,
+        `https://api.ebmksa.com/${isInter ? "contact-for-inter" : "contact"}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

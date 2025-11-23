@@ -31,7 +31,7 @@ export function Footer() {
   const t = useTranslations("footer");
   const [contactData, setContactData] = useState<ContactInfoType>();
   useEffect(() => {
-    fetch("http://localhost:3001/contact-info")
+    fetch("https://api.ebmksa.com/contact-info")
       .then((data) => data.json())
       .then((finalData) => setContactData(finalData));
   }, []);

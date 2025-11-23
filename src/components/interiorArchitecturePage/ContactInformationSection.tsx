@@ -18,7 +18,7 @@ export function InterContactInformationSection() {
   const locale = useLocale();
   const [contactData, setContactData] = useState<ContactInfoType>();
   useEffect(() => {
-    fetch("http://localhost:3001/interContact-info")
+    fetch("https://api.ebmksa.com/interContact-info")
       .then((data) => data.json())
       .then((finalData) => setContactData(finalData));
   }, []);

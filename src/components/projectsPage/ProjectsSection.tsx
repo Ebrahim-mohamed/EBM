@@ -37,7 +37,7 @@ export function ProjectsSection() {
   const locale = useLocale();
   const [contactData, setContactData] = useState<ProjectType[]>();
   useEffect(() => {
-    fetch("http://localhost:3001/projects")
+    fetch("https://api.ebmksa.com/projects")
       .then((data) => data.json())
       .then((finalData) => setContactData(finalData));
   }, []);

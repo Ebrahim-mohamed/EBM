@@ -13,7 +13,7 @@ export function ProjectBox(projectProps: projectBoxType) {
         <img
           src={
             projectProps.image
-              ? `http://localhost:3001/uploads/${projectProps.image}`
+              ? `https://api.ebmksa.com/uploads/${projectProps.image}`
               : "/fallback.png"
           }
           alt="service image"
