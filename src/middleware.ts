@@ -7,21 +7,20 @@ const intlMiddleware = createMiddleware(routing);
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Redirect /dashboard to /dashboard/projects
+  // Redirect /dashboard exactly to /dashboard/projects
   if (pathname === "/dashboard") {
     return NextResponse.redirect(new URL("/dashboard/projects", request.url));
   }
 
-  // Apply next-intl middleware for all other routes
+  // Allow dashboard login and other dashboard paths freely
+  if (pathname.startsWith("/dashboard")) {
+    return NextResponse.next();
+  }
+
+  // Apply intl middleware for other routes
   return intlMiddleware(request);
 }
 
 export const config = {
-  matcher: [
-    // Match all paths EXCEPT:
-    // - /api, /trpc, /_next, /_vercel, any file, and /dashboard
-    "/((?!api|trpc|_next|_vercel|.*\\..*|dashboard).*)",
-    // Also match /dashboard specifically for the redirect
-    "/dashboard",
-  ],
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };
