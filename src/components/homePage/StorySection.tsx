@@ -1,11 +1,13 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Header } from "../Header";
 import Image from "next/image";
 import { StoryPra } from "./StoryPra";
 import { LinkButton } from "../LinkButton";
+import { DownloadButton } from "../DownloadButton";
 const pras = ["pra1", "pra2", "pra3"];
 export function StorySection() {
   const t = useTranslations("homePage.storySection");
+  const locale = useLocale();
   return (
     <div className="p-[var(--sectionPadding)]">
       <Header
@@ -24,8 +26,9 @@ export function StorySection() {
               <StoryPra text={t(pra)} key={pra} />
             ))}
           </div>
-          <div>
+          <div className="flex gap-[1rem] w-full max-[420px]:flex-col">
             <LinkButton name={t("button")} to="about" />
+            <DownloadButton />
           </div>
         </div>
 

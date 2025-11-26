@@ -145,6 +145,7 @@
       "pra3": "Waste Heat Recovery Systems & Boilers",
       "pra4": "Industrial Parts & Equipment",
       "pra5": "Renewable Energy",
+      "pra6": "Installation & Maintenance Services",
       "button": "View All Services"
     },
     "endSection": {
@@ -169,7 +170,10 @@
       "serviceButton3": "Explore",
       "serviceHeader4": "Special Systems",
       "serviceDes4": "Discover EBM’s range of specialized engineering products, including high-efficiency misting systems, industrial boilers, diesel gensets, and sustainable energy solutions — all designed to enhance performance, safety, and comfort across every project.",
-      "serviceButton4": "Explore"
+      "serviceHeader5": "Installation & Maintenance",
+      "serviceDes5": "At EBM Engineering, we deliver complete installation and maintenance solutions for all supplied systems, including Smoke & Fire Curtains, Roller Shutters, Ventilation Fans, and Boilers. Our certified technicians ensure precise installation, rigorous testing, and full commissioning, followed by comprehensive handover with complete documentation and training. We provide proactive preventive maintenance programs and rapid emergency response to maximize system performance, ensure safety compliance, minimize downtime, and extend equipment lifecycle—guaranteeing long-term reliability and operational efficiency for every project. ok arabic version of it",
+      "serviceButton4": "Explore",
+      "serviceButton5": "Explore"
     },
     "endSection": {
       "header": "Ready to Elevate <second>Your Building’s Performance</second>?",

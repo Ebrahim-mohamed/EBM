@@ -29,9 +29,11 @@ export function SAndSBox(sASProps: SAndSBoxType) {
         <p className="text-white text-[1.125rem] font-normal leading-[1.8rem] ">
           {sASProps.des}
         </p>
-        <div>
-          <LinkButton name={sASProps.button} to={sASProps.to} />
-        </div>
+        {sASProps.header !== "Installation & Maintenance" && (
+          <div>
+            <LinkButton name={sASProps.button} to={sASProps.to} />
+          </div>
+        )}
       </div>
     </div>
   );

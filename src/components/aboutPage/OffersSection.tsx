@@ -35,7 +35,7 @@ export function OffersSection() {
               {t("thirdHeader")}
             </h2>
             <ol>
-              {Array.from({ length: 5 }, (_, i) => i + 1).map((num) => (
+              {Array.from({ length: 6 }, (_, i) => i + 1).map((num) => (
                 <li key={num}>
                   {num}.{t(`pra${num}`)}
                 </li>

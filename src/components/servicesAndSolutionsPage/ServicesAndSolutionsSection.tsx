@@ -16,7 +16,7 @@ export function ServicesAndSolutionsSection() {
         })}
       />
       <div className="flex flex-col gap-[4rem]">
-        {Array.from({ length: 4 }, (_, i) => i + 1).map((num) => (
+        {Array.from({ length: 5 }, (_, i) => i + 1).map((num) => (
           <SAndSBox
             key={num}
             button={t(`serviceButton${num}`)}
