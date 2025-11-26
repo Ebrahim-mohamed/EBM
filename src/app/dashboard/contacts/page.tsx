@@ -23,6 +23,7 @@ type ContactInfoType = {
   address: Localized;
   phone: Localized;
   email: string;
+  whatsappNumber: string;
 };
 
 export default function ContactInfo() {
@@ -120,6 +121,15 @@ export default function ContactInfo() {
                 </TableCell>
                 <TableCell className="text-center">Email</TableCell>
               </TableRow>
+              <TableRow className="hover:bg-gray-50 transition-colors">
+                <TableCell className="p-4 break-words">
+                  {contactInfo.whatsappNumber}
+                </TableCell>
+                <TableCell className="p-4 break-words text-right">
+                  {contactInfo.whatsappNumber}
+                </TableCell>
+                <TableCell className="text-center">Whatsapp number</TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </div>
@@ -149,12 +159,16 @@ function ModifyDialog({
   const [phoneEn, setPhoneEn] = useState(contactInfo.phone.en);
   const [phoneAr, setPhoneAr] = useState(contactInfo.phone.ar);
   const [email, setEmail] = useState(contactInfo.email);
+  const [whatsappNumber, setWhatsappNumber] = useState(
+    contactInfo.whatsappNumber
+  );
 
   const handleSave = () => {
     onSave({
       address: { en: addressEn, ar: addressAr },
       phone: { en: phoneEn, ar: phoneAr },
       email,
+      whatsappNumber,
     });
     setOpen(false);
   };
@@ -165,6 +179,7 @@ function ModifyDialog({
     setPhoneEn(contactInfo.phone.en);
     setPhoneAr(contactInfo.phone.ar);
     setEmail(contactInfo.email);
+    setWhatsappNumber(contactInfo.whatsappNumber);
   }, [contactInfo, open]);
 
   return (
@@ -185,6 +200,7 @@ function ModifyDialog({
             <label className="font-medium text-sm">Address (EN)</label>
             <input
               className="w-full border rounded-md p-2 text-sm"
+              required
               value={addressEn}
               onChange={(e) => setAddressEn(e.target.value)}
             />
@@ -193,6 +209,7 @@ function ModifyDialog({
             <label className="font-medium text-sm">Address (AR)</label>
             <input
               className="w-full border rounded-md p-2 text-sm text-right"
+              required
               value={addressAr}
               onChange={(e) => setAddressAr(e.target.value)}
             />
@@ -201,6 +218,7 @@ function ModifyDialog({
             <label className="font-medium text-sm">Phone (EN)</label>
             <input
               className="w-full border rounded-md p-2 text-sm"
+              required
               value={phoneEn}
               onChange={(e) => setPhoneEn(e.target.value)}
             />
@@ -209,6 +227,7 @@ function ModifyDialog({
             <label className="font-medium text-sm">Phone (AR)</label>
             <input
               className="w-full border rounded-md p-2 text-sm text-right"
+              required
               value={phoneAr}
               onChange={(e) => setPhoneAr(e.target.value)}
             />
@@ -217,9 +236,20 @@ function ModifyDialog({
             <label className="font-medium text-sm">Email</label>
             <input
               type="email"
+              required
               className="w-full border rounded-md p-2 text-sm"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div>
+            <label className="font-medium text-sm">Whatsapp number</label>
+            <input
+              type="text"
+              required
+              className="w-full border rounded-md p-2 text-sm"
+              value={whatsappNumber}
+              onChange={(e) => setWhatsappNumber(e.target.value)}
             />
           </div>
         </div>

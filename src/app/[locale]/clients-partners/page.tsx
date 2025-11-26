@@ -18,7 +18,7 @@ export default function ClientsAndPartnersPage() {
         })}
         location="clientsAndPartnersPage"
       />
-      <AwardSection />
+      {/* <AwardSection /> */}
       {/* <MangersSection /> */}
       <PartnersSection isNotHomePage />
       <FaqSection />
