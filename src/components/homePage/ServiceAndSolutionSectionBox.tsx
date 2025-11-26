@@ -17,7 +17,11 @@ export function ServiceAndSolutionSectionBox(
       // onMouseEnter={() => setIsIn(true)}
       // onMouseOut={() => setIsIn(false)}
     >
-      <h2 className={`text-[1.5rem] font-black `}>{t(service.header)}</h2>
+      <h2
+        className={`text-[1.5rem] font-black bg-[#0008] w-fit py-2 px-4 rounded-[0.5rem]`}
+      >
+        {t(service.header)}
+      </h2>
       {/* <p
         className={`text-[1rem] font-bold absolute transition-all duration-[0.5s] ${
           isIn ? " translate-y-0 " : " translate-y-[130%] "
