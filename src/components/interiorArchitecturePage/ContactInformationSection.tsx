@@ -3,6 +3,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { ContactInformationFormTab } from "./ContactInformationFormTab";
 import { useEffect, useState } from "react";
 import { LinkButton } from "../LinkButton";
+import { DownloadButton } from "../DownloadButton";
 const contacts = [
   { header: "addressHeader", content: "address", img: "location" },
   { header: "phoneHeader", content: "phone", img: "location" },
@@ -69,7 +70,10 @@ export function InterContactInformationSection() {
           </div>
         </div>
       </div>
-      <LinkButton name={t("contact")} to="contact-for-inter" />
+      <div className="flex gap-[1rem] items-center justify-center w-full max-[420px]:flex-col">
+        <LinkButton name={t("contact")} to="contact-for-inter" />
+        <DownloadButton inter />
+      </div>
     </div>
   );
 }

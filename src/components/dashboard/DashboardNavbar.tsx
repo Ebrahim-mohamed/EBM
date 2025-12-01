@@ -17,6 +17,10 @@ export function DashboardNavbar() {
       <NavLink name="Contact info" to="contacts" />
       <NavLink name="Company profile" to="company-profile" />
       <NavLink name="Inter contact Info" to="inter-contact" />
+      <NavLink
+        name="Interior architectural Company profile"
+        to="interior-architectural-profile"
+      />
     </div>
   );
 }

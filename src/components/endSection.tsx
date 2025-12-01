@@ -1,12 +1,16 @@
+"use client";
 import { endSectionType } from "@/types/globalTypes";
 import { LinkButton } from "./LinkButton";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { DownloadButton } from "./DownloadButton";
+import { usePathname } from "next/navigation";
 
 export function EndSection(endSectionProps: endSectionType) {
   const locale = useLocale();
+  const path = usePathname();
+  console.log(path);
   return (
     <div
       className="py-[4.3rem] px-[6.25rem] flex items-center justify-center w-full gap-[1.5rem] bg-no-repeat bg-cover  bg-center flex-col"
@@ -19,7 +23,7 @@ export function EndSection(endSectionProps: endSectionType) {
       </h3>
       <div className="flex gap-[1rem] items-center justify-center w-full max-[420px]:flex-col">
         <LinkButton name={endSectionProps.button} to={endSectionProps.to} />
-        <DownloadButton />
+        <DownloadButton inter={path.includes("interior-architectural")} />
       </div>
     </div>
   );
