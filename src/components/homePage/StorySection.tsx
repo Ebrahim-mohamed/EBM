@@ -1,9 +1,9 @@
 import { useLocale, useTranslations } from "next-intl";
 import { Header } from "../Header";
-import Image from "next/image";
 import { StoryPra } from "./StoryPra";
 import { LinkButton } from "../LinkButton";
 import { DownloadButton } from "../DownloadButton";
+import { StoryImageSlider } from "./StoryImageSlider";
 const pras = ["pra1", "pra2", "pra3"];
 export function StorySection() {
   const t = useTranslations("homePage.storySection");
@@ -33,13 +33,7 @@ export function StorySection() {
           </div>
         </div>
 
-        <Image
-          alt="story image"
-          width={300}
-          height={300}
-          src="/homePage/story.jpg"
-          className="w-[70%]  rounded-[1.5rem] max-[1300px]:w-[100%] max-[1100px]:w-[130%]"
-        />
+        <StoryImageSlider />
       </div>
     </div>
   );
