@@ -25,6 +25,10 @@ export function DashboardNavbar() {
         name="Installation & Maintenance Profile"
         to="installation-profile"
       />
+      <NavLink
+        name="Story section images"
+        to="storySectionImages"
+      />
     </div>
   );
 }
