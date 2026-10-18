@@ -12,7 +12,7 @@ export function NavLink({ name, to }: { name: string; to: string }) {
         path.includes(to)
           ? " text-[#111827] font-bold bg-[#A8CF38] p-[0.5rem]  "
           : " text-white "
-      } text-[1.5rem]  px-[1rem]  w-full`}
+      } text-[1.2rem]  px-[1rem]  w-full`}
     >
       {name}
     </Link>
