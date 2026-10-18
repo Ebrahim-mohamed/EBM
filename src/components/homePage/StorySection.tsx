@@ -26,9 +26,10 @@ export function StorySection() {
               <StoryPra text={t(pra)} key={pra} />
             ))}
           </div>
-          <div className="flex gap-[1rem] w-full max-[420px]:flex-col">
+          <div className="flex flex-wrap gap-[1rem] w-full max-[420px]:flex-col">
             <LinkButton name={t("button")} to="about" />
             <DownloadButton />
+            <DownloadButton type="installation" />
           </div>
         </div>
 

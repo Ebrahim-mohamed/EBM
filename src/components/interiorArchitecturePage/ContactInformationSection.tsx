@@ -73,6 +73,7 @@ export function InterContactInformationSection() {
       <div className="flex gap-[1rem] items-center justify-center w-full max-[420px]:flex-col">
         <LinkButton name={t("contact")} to="contact-for-inter" />
         <DownloadButton inter />
+        <DownloadButton type="installation" />
       </div>
     </div>
   );

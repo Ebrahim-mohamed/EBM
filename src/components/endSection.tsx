@@ -21,9 +21,10 @@ export function EndSection(endSectionProps: endSectionType) {
       <h3 className="text-[4rem] text-white font-black text-center max-[1000px]:text-[3rem] max-[700px]:text-[2.5rem] max-[550px]:text-[2rem]">
         {endSectionProps.header}
       </h3>
-      <div className="flex gap-[1rem] items-center justify-center w-full max-[420px]:flex-col">
+      <div className="flex flex-wrap gap-[1rem] items-center justify-center w-full max-[420px]:flex-col">
         <LinkButton name={endSectionProps.button} to={endSectionProps.to} />
         <DownloadButton inter={path.includes("interior-architectural")} />
+        <DownloadButton type="installation" />
       </div>
     </div>
   );

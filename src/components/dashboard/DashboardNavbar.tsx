@@ -21,6 +21,10 @@ export function DashboardNavbar() {
         name="Interior architectural Company profile"
         to="interior-architectural-profile"
       />
+      <NavLink
+        name="Installation & Maintenance Profile"
+        to="installation-profile"
+      />
     </div>
   );
 }
